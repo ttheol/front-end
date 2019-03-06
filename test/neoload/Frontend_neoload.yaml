@@ -1,0 +1,76 @@
+name: catalogue_neoload
+variables:
+- constant:
+    name: basicpath
+    value: CHECK_TO_REPLACE
+- constant:
+    name: tagurl
+    value: TAGURL_TO_REPLACE
+- constant:
+    name: server_host
+    value: HOST_TO_REPLACE
+- constant:
+    name: server_port
+    value: PORT_TO_REPLACE
+- constant:
+    name: dynatraceApiKey
+    value: APIKEY_TO_REPLACE
+- constant:
+    name: dynatraceid
+    value: DTID_TO_REPLACE
+- constant:
+    name: jsonAnomalieDetectionFile
+    value: JSONFILE_TO_REPLACE
+- constant:
+    name: outPutReferenceFile
+    value: OUTPUTFILE_TO_REPLACE
+- constant:
+    name: TAGS
+    value: TAGS_TO_REPLACE
+servers:
+- name: catalogue_host
+  host: ${server_host}
+  port: ${server_port}
+user_paths:
+- name: FrontEndCheck
+  actions:
+    steps:
+    - transaction:
+        name: Basic Check
+        steps:
+        - request:
+            url: /${basicpath}
+            server: catalogue_host
+            method: GET
+            headers:
+            - Cache-Control: no-cache
+            - Content-Type: application/json
+            - json: "true"
+    - think_time: 250ms
+populations:
+- name: FrontEndLoad
+  user_paths:
+  - name: FrontEndCheck
+    distribution: 100%
+scenarios:
+- name: BasicCheck
+  populations:
+  - name: FrontEndLoad
+    constant_load:
+      users: 1
+      duration: 15 iterations
+  - name: Population_Dynatrace_Integration
+    constant_load:
+      users: 1
+      duration: 15 iterations
+- name: FrontEndLoad
+  populations:
+  - name: FrontEndLoad
+    constant_load:
+      users: 49
+      duration: 5m
+      rampup: 30s
+  - name: Population_Dynatrace_Integration
+    constant_load:
+      users: 1
+      duration: 5m

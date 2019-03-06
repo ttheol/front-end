@@ -1,0 +1,23 @@
+{
+    "front-end" : {
+        "etype" : "SERVICE",
+        "name" : "Front-End Service",
+        "owner" : "TBD",
+        "environments" : {
+            "Staging" : {
+                "tags" : [
+                    {
+                        "context" : "CONTEXTLESS",
+                        "key" : "environment",
+                        "value" : "staging"
+                    },
+                    {
+                        "context" : "CONTEXTLESS",
+                        "key" : "app",
+                        "value" : "front-end"
+                    }
+                ]
+            }
+        }
+    }
+}
