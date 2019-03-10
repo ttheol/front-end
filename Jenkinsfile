@@ -24,17 +24,16 @@ pipeline {
       }
     }
 
-    stage('Deploy to dev namespace') {
 
-      stage('Deploy to dev namespace') {
+    stage('Deploy to dev namespace') {
         steps {
           sh "sed -i 's,VERSION_TO_REPLACE,${VERSION},'  $WORKSPACE/docker-compose.yml"
           sh 'docker-compose -f $WORKSPACE/docker-compose.yml up -d'
 
         }
 
-      }
     }
+
   /*  stage('DT Deploy Event') {
         when {
             expression {
