@@ -9,6 +9,7 @@ pipeline {
     TAG = "neotysdevopsdemo/${APP_NAME}"
     TAG_DEV = "${TAG}:DEV-${VERSION}"
     TAG_STAGING = "${TAG}-stagging:${VERSION}"
+    GROUP="neotysdevopsdemo"
   }
   stages {
     stage('Docker build') {
