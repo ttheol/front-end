@@ -52,8 +52,8 @@ pipeline {
 
       steps {
         container('docker'){
-          sh "docker tag ${_TAG_DEV} ${_TAG_STAGING}"
-          sh "docker push ${_TAG_STAGING}"
+          sh "docker tag ${TAG_DEV} ${TAG_STAGING}"
+          sh "docker push ${TAG_STAGING}"
         }
       }
     }
