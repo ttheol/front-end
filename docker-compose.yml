@@ -9,7 +9,7 @@ services:
     - all
     read_only: true
     environment:
-    - DT_CUSTOM_PROP=app=front-end,environment=dev
+    - DT_CUSTOM_PROP=app=front-end environment=dev
   edge-router:
     image: neotysdevopsdemo/edge-router:0.1
     ports:
@@ -25,7 +25,7 @@ services:
     - DAC_OVERRIDE
     read_only: true
     environment:
-    - DT_CUSTOM_PROP=app=edge-router,environment=dev
+    - DT_CUSTOM_PROP=app=edge-router environment=dev
     tmpfs:
     - /var/run:rw,noexec,nosuid
     hostname: edge-router
@@ -40,13 +40,13 @@ services:
     - NET_BIND_SERVICE
     read_only: true
     environment:
-    - DT_CUSTOM_PROP=app=catalogue,environment=dev
+    - DT_CUSTOM_PROP=app=catalogue environment=dev
   catalogue-db:
     image: neotysdevopsdemo/catalogue-db:DEV-VERSION_TO_REPLACE
     hostname: catalogue-db
     restart: always
     environment:
-    - DT_CUSTOM_PROP=app=catalogue-db,environment=dev
+    - DT_CUSTOM_PROP=app=catalogue-db environment=dev
     - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     - MYSQL_ALLOW_EMPTY_PASSWORD=true
     - MYSQL_DATABASE=socksdb
@@ -63,7 +63,7 @@ services:
     - /tmp:rw,noexec,nosuid
     environment:
     - JAVA_OPTS=-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -Dspring.zipkin.enabled=false
-    - DT_CUSTOM_PROP=app=carts,environment=dev
+    - DT_CUSTOM_PROP=app=carts environment=dev
   carts-db:
     image: mongo:3.4
     hostname: carts-db
@@ -76,7 +76,7 @@ services:
     - SETUID
     read_only: true
     environment:
-    - DT_CUSTOM_PROP=app=carts-db,environment=VERSION_TO_REPLACE
+    - DT_CUSTOM_PROP=app=carts-db environment=dev
     tmpfs:
     - /tmp:rw,noexec,nosuid
   orders:
@@ -92,7 +92,7 @@ services:
     - /tmp:rw,noexec,nosuid
     environment:
     - JAVA_OPTS=-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -Dspring.zipkin.enabled=false
-    - DT_CUSTOM_PROP=app=orders,environment=VERSION_TO_REPLACE
+    - DT_CUSTOM_PROP=app=orders environment=dev
   orders-db:
     image: mongo:3.4
     hostname: orders-db
@@ -105,7 +105,7 @@ services:
     - SETUID
     read_only: true
     environment:
-    - DT_CUSTOM_PROP=app=orders-db,environment=dev
+    - DT_CUSTOM_PROP=app=orders-db environment=dev
     tmpfs:
     - /tmp:rw,noexec,nosuid
   shipping:
@@ -121,7 +121,7 @@ services:
     - /tmp:rw,noexec,nosuid
     environment:
     - JAVA_OPTS=-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -Dspring.zipkin.enabled=false
-    - DT_CUSTOM_PROP=app=shipping,environment=dev
+    - DT_CUSTOM_PROP=app=shipping environment=dev
   queue-master:
     image: neotysdevopsdemo/queue-master:DEV-VERSION_TO_REPLACE
     hostname: queue-master
@@ -134,7 +134,7 @@ services:
     - NET_BIND_SERVICE
     read_only: true
     environment:
-    - DT_CUSTOM_PROP=app=queue-master,environment=dev
+    - DT_CUSTOM_PROP=app=queue-master environment=dev
     tmpfs:
     - /tmp:rw,noexec,nosuid
   rabbitmq:
@@ -156,7 +156,7 @@ services:
     cap_drop:
     - all
     environment:
-    - DT_CUSTOM_PROP=app=payment,environment=dev
+    - DT_CUSTOM_PROP=app=payment environment=dev
     cap_add:
     - NET_BIND_SERVICE
     read_only: true
@@ -171,7 +171,7 @@ services:
     read_only: true
     environment:
     - MONGO_HOST=user-db:27017
-    - DT_CUSTOM_PROP=app=user,environment=dev
+    - DT_CUSTOM_PROP=app=user environment=dev
   user-db:
     image: neotysdevopsdemo/user-db:DEV-VERSION_TO_REPLACE
     hostname: user-db
@@ -183,7 +183,7 @@ services:
     - SETGID
     - SETUID
     environment:
-    - DT_CUSTOM_PROP=app=user-db,environment=dev
+    - DT_CUSTOM_PROP=app=user-db environment=dev
     read_only: true
     tmpfs:
     - /tmp:rw,noexec,nosuid
