@@ -187,3 +187,7 @@ services:
     read_only: true
     tmpfs:
     - /tmp:rw,noexec,nosuid
+networks:
+  default:
+    external:
+      name: parasoft

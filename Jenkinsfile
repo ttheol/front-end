@@ -34,6 +34,16 @@ pipeline {
         }
 
     }
+    stage('Start NeoLoad infrastructure') {
+
+              steps {
+                  sh 'docker-compose -f $WORKSPACE/infrastructure/infrastructure/neoload/lg/docker-compose.yml up -d'
+
+              }
+
+          }
+
+
 
   /*  stage('DT Deploy Event') {
         when {
@@ -48,16 +58,24 @@ pipeline {
           }
         }
     }*/
-    stage('Mark artifact for staging namespace') {
+    /*stage('Mark artifact for staging namespace') {
 
       steps {
-        container('docker'){
+
           sh "docker tag ${TAG_DEV} ${TAG_STAGING}"
           sh "docker push ${TAG_STAGING}"
-        }
-      }
-    }
 
-    }  
+      }
+    }*/
+
+    }
+    post {
+            always {
+                    sh 'docker-compose -f $WORKSPACE/infrastructure/infrastructure/neoload/lg/docker-compose.yml down'
+                    cleanWs()
+                    sh 'docker volume prune'
+            }
+
+          }
   }
 
