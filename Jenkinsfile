@@ -13,7 +13,7 @@ pipeline {
   }
   stages {
 
-    stage('build')
+    stage('build app')
     {
       agent {
             docker { image 'eliostech/jenkins-slave-nodejs' }
