@@ -12,6 +12,16 @@ pipeline {
     GROUP="neotysdevopsdemo"
   }
   stages {
+
+    stage('build')
+    {
+      agent {
+            docker { image 'eliostech/jenkins-slave-nodejs' }
+        }
+        steps{
+            sh 'npm install'
+        }
+    }
     stage('Docker build') {
 
       steps {
