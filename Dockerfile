@@ -10,7 +10,7 @@ COPY package.json /usr/src/app/
 COPY yarn.lock /usr/src/app/
 RUN chown myuser /usr/src/app/yarn.lock
 
-USER myuser
+USER JENKINS
 RUN yarn install
 
 COPY . /usr/src/app
