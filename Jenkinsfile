@@ -22,7 +22,9 @@ pipeline {
     stage('build app')
     {
       agent {
-            docker { image 'eliostech/jenkins-slave-nodejs' }
+            docker { image 'eliostech/jenkins-slave-nodejs:latest'
+              reuseNode true
+              }
         }
         steps{
             sh 'npm install'
