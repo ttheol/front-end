@@ -7,13 +7,13 @@
   describe("endpoints", function() {
     describe("catalogueUrl", function() {
       it("points to the proper endpoint", function() {
-        expect(endpoints.catalogueUrl).to.equal("http://soavirt_soavirt_1.parasoft:9080");
+        expect(endpoints.catalogueUrl).to.equal("http://catalogue/");
       });
     });
 
     describe("tagsUrl", function() {
       it("points to the proper endpoint", function() {
-        expect(endpoints.tagsUrl).to.equal("http://soavirt_soavirt_1.parasoft:9080/tags");
+        expect(endpoints.tagsUrl).to.equal("http://catalogue/tags");
       });
     });
 
