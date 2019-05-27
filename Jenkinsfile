@@ -16,7 +16,7 @@ pipeline {
 
       steps {
         withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'TOKEN', usernameVariable: 'USER')]) {
-          sh "docker pull ${GROUP}/${APP_NAME}:DEV-0.1"
+          sh "docker build -t ${GROUP}/${APP_NAME}:DEV-0.1 ."
           sh "docker tag ${GROUP}/${APP_NAME}:DEV-0.1 ${TAG_DEV}"
           sh "docker login --username=${USER} --password=${TOKEN}"
           sh "docker push ${TAG_DEV}"
