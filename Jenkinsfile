@@ -9,10 +9,16 @@ pipeline {
     TAG = "neotysdevopsdemo/${APP_NAME}"
     TAG_DEV = "${TAG}:DEV-${VERSION}"
     TAG_STAGING = "${TAG}-stagging:${VERSION}"
-    GROUP="neotysdevopsdemo"
+    GROUP="neotysdevopsdemowithvirtualize"
   }
   stages {
-
+    stage('Checkout') {
+          agent { label 'master' }
+          steps {
+              git  url:"https://github.com/${GROUP}/${APP_NAME}.git",
+                      branch :'master'
+          }
+      }
     stage('build app')
     {
       agent {
