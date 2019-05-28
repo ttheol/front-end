@@ -12,7 +12,7 @@ pipeline {
     GROUP="neotysdevopsdemo"
   }
   stages {
-    stage('Checkout') {
+   /* stage('Checkout') {
           agent { label 'master' }
           steps {
               git  url:"https://github.com/${GROUP}/${APP_NAME}.git",
@@ -29,7 +29,7 @@ pipeline {
         steps{
             sh 'npm install'
         }
-    }
+    }*/
     stage('Docker build') {
 
       steps {
