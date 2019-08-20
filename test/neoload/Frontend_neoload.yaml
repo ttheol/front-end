@@ -1,4 +1,4 @@
-name: catalogue_neoload
+name: stage_neoload
 variables:
 - constant:
     name: basicpath
@@ -7,10 +7,10 @@ variables:
     name: tagurl
     value: TAGURL_TO_REPLACE
 - constant:
-    name: server_host
+    name: host
     value: HOST_TO_REPLACE
 - constant:
-    name: server_port
+    name: port
     value: PORT_TO_REPLACE
 - constant:
     name: dynatraceApiKey
@@ -27,45 +27,10 @@ variables:
 - constant:
     name: TAGS
     value: TAGS_TO_REPLACE
-servers:
-- name: catalogue_host
-  host: ${server_host}
-  port: ${server_port}
-user_paths:
-- name: FrontEndCheck
-  actions:
-    steps:
-    - transaction:
-        name: Basic Check
-        steps:
-        - request:
-            url: /${basicpath}
-            server: catalogue_host
-            method: GET
-            headers:
-            - Cache-Control: no-cache
-            - Content-Type: application/json
-            - json: "true"
-    - think_time: 250ms
-populations:
-- name: FrontEndLoad
-  user_paths:
-  - name: FrontEndCheck
-    distribution: 100%
 scenarios:
-- name: BasicCheck
-  populations:
-  - name: FrontEndLoad
-    constant_load:
-      users: 1
-      duration: 15 iterations
-  - name: Population_Dynatrace_Integration
-    constant_load:
-      users: 1
-      duration: 15 iterations
 - name: FrontEndLoad
   populations:
-  - name: FrontEndLoad
+  - name: Population_Buyer
     constant_load:
       users: 49
       duration: 5m

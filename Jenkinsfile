@@ -63,28 +63,40 @@ pipeline {
 
 
 
-  /*  stage('DT Deploy Event') {
-        when {
-            expression {
-            return env.BRANCH_NAME ==~ 'release/.*' || env.BRANCH_NAME ==~'master'
+
+     stage('Run load test') {
+            agent {
+                dockerfile {
+                    args '--user root -v /tmp:/tmp --network=parasoft'
+                    dir 'infrastructure/infrastructure/neoload/controller/'
+                }
             }
-        }
-        steps {
-          container("curl") {
-            // send custom deployment event to Dynatrace
-            sh "curl -X POST \"$DT_TENANT_URL/api/v1/events?Api-Token=$DT_API_TOKEN\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"{ \\\"eventType\\\": \\\"CUSTOM_DEPLOYMENT\\\", \\\"attachRules\\\": { \\\"tagRule\\\" : [{ \\\"meTypes\\\" : [\\\"SERVICE\\\"], \\\"tags\\\" : [ { \\\"context\\\" : \\\"CONTEXTLESS\\\", \\\"key\\\" : \\\"app\\\", \\\"value\\\" : \\\"${env.APP_NAME}\\\" }, { \\\"context\\\" : \\\"CONTEXTLESS\\\", \\\"key\\\" : \\\"environment\\\", \\\"value\\\" : \\\"dev\\\" } ] }] }, \\\"deploymentName\\\":\\\"${env.JOB_NAME}\\\", \\\"deploymentVersion\\\":\\\"${_VERSION}\\\", \\\"deploymentProject\\\":\\\"\\\", \\\"ciBackLink\\\":\\\"${env.BUILD_URL}\\\", \\\"source\\\":\\\"Jenkins\\\", \\\"customProperties\\\": { \\\"Jenkins Build Number\\\": \\\"${env.BUILD_ID}\\\",  \\\"Git commit\\\": \\\"${env.GIT_COMMIT}\\\" } }\" "
-          }
-        }
-    }*/
-    /*stage('Mark artifact for staging namespace') {
+            steps {
 
-      steps {
+                     sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
+                     sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/Frontend_neoload.yaml"
+                     sh "sed -i 's/DTID_TO_REPLACE/${DYNATRACEID}/' $WORKSPACE/test/neoload/Frontend_neoload.yaml"
+                     sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
+                     sh "sed -i 's,JSONFILE_TO_REPLACE,$WORKSPACE/monspec/front-end_monspec.json,'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
+                     sh "sed -i 's/TAGS_TO_REPLACE/${NL_DT_TAG}/' $WORKSPACE/test/neoload/Frontend_neoload.yaml"
+                     sh "sed -i 's,OUTPUTFILE_TO_REPLACE,$WORKSPACE/infrastructure/sanitycheck.json,'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
 
-          sh "docker tag ${TAG_DEV} ${TAG_STAGING}"
-          sh "docker push ${TAG_STAGING}"
+                      script {
+                          neoloadRun executable: '/home/neoload/neoload/bin/NeoLoadCmd',
+                                  project: "$WORKSPACE/test/neoload/load_template/load_template.nlp",
+                                  testName: 'Stage_load_${VERSION}_${BUILD_NUMBER}',
+                                  testDescription: 'Stage_load_${VERSION}_${BUILD_NUMBER}',
+                                  commandLineOption: "-project  $WORKSPACE/test/neoload/Frontend_neoload.yaml -nlweb -L Population_Buyer=$WORKSPACE/infrastructure/infrastructure/neoload/lg/remote.txt -L Population_Dynatrace_Integration=$WORKSPACE/infrastructure/infrastructure/neoload/lg/local.txt -nlwebToken $NLAPIKEY -variables host=ec2-54-229-141-49.eu-west-1.compute.amazonaws.com,port=80",
+                                  scenario: 'FrontEndLoad', sharedLicense: [server: 'NeoLoad Demo License', duration: 2, vuCount: 200],
+                                  trendGraphs: [
+                                          [name: 'Limit test Catalogue API Response time', curve: ['CatalogueList>Actions>Get Catalogue List'], statistic: 'average'],
+                                          'ErrorRate'
+                                  ]
+                      }
 
-      }
-    }*/
+                  }
+                }*/
+
 
     }
     post {
