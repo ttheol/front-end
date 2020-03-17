@@ -190,4 +190,4 @@ services:
 networks:
   default:
     external:
-      name: parasoft
+      name: TO_REPLACE
