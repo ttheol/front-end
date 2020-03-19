@@ -82,6 +82,7 @@ pipeline {
      stage('Run load test') {
 
             steps {
+                     sh "mkdir $WORKSPACE/test/neoload/load_template/custom-resources/"
 
                      sh "cp $WORKSPACE/monspec/frontend_anomalieDection.json $WORKSPACE/test/neoload/load_template/custom-resources/"
 
