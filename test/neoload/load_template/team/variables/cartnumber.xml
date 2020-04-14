@@ -1,0 +1,1 @@
+<variable-random-number max-value="5" min-value="3" name="cartnumber" order="1" policy="1" random-seed="false" range="2" uid="9c6d37a6-29bb-484c-bdfb-e0d96f40caca" whenOutOfValues="CYCLE_VALUES"/>

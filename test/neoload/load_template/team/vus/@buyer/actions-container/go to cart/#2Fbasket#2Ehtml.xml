@@ -1,0 +1,687 @@
+<http-page executeResourcesDynamically="false" name="/basket.html"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    slaProfileEnabled="false" thinkTime="2908"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="9941e109-9ec6-4038-8f67-7369b238bc56">
+    <embedded-action>666193bb-4c38-439d-8a2d-034959c10885</embedded-action>
+    <embedded-action>74c402c3-3405-4071-a242-cbbd13ef366b</embedded-action>
+    <embedded-action>6d54bdc2-59b3-4a7d-a021-4b945d460b5d</embedded-action>
+    <embedded-action>ca5601d8-342f-4634-8a13-c2872a29fcba</embedded-action>
+    <embedded-action>99ea9cc7-2813-4a1e-bdfd-24edaadff0dd</embedded-action>
+    <embedded-action>11978961-971c-4012-a43f-979669f1a62a</embedded-action>
+    <embedded-action>e4dcfaa7-f797-43d8-bb75-e8356ef2dd61</embedded-action>
+    <embedded-action>512abb38-ea1b-4ace-903a-5e85415359e4</embedded-action>
+    <embedded-action>12905a87-c843-4221-b5c0-c1dea2e33d41</embedded-action>
+    <embedded-action>b6db5408-211c-484c-8a6f-e61347af75e4</embedded-action>
+    <embedded-action>a80eb794-9b32-4020-b8c8-67cefb67edd3</embedded-action>
+    <embedded-action>4843e0f7-982c-45d6-8c2d-5d0c766fdbed</embedded-action>
+    <embedded-action>0da1bf2f-7ada-4ecb-972b-1cf2a08bc83b</embedded-action>
+    <embedded-action>6b5795dd-e850-4833-ba87-7930bc316c1d</embedded-action>
+    <embedded-action>c36baaf0-8d6b-47ed-b7e4-3ecf8b4c7f44</embedded-action>
+    <embedded-action>0d37105a-3c21-409d-b317-d3e2d13870f0</embedded-action>
+    <embedded-action>b1c89a75-0005-48ac-862f-d0bf14ecb666</embedded-action>
+    <embedded-action>04db80a6-ee5d-4616-9019-0b6bfe861edb</embedded-action>
+    <embedded-action>409b4b0a-4096-4be6-9154-1df077c1a197</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_9941e109-9ec6-4038-8f67-7369b238bc56.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=UTF-8"
+    eTag="W/&quot;5b5c-16b28833968:dtagent10169190521113456d0ou&quot;"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:16 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/basket.html" path="/basket.html" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="23818" serverUid="Server"
+    slaProfileEnabled="false" uid="666193bb-4c38-439d-8a2d-034959c10885" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_666193bb-4c38-439d-8a2d-034959c10885.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_666193bb-4c38-439d-8a2d-034959c10885.txt</requestContentFileDescription>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755168598|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/detail.html?id=03fef6ac-1896-4ce8-bd69-b798f85c6e0b"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Type: text/html; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"5b5c-16b28833968:dtagent10169190521113456d0ou"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:16 GMT&#xd;
+X-Oneagent-Js-Injection: true&#xd;
+X-Powered-By: Express&#xd;
+X-Ruxit-Js-Agent: true&#xd;
+Transfer-Encoding: chunked</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;548b-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/font-awesome.css"
+    path="/css/font-awesome.css" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="21643" serverUid="Server"
+    slaProfileEnabled="false" uid="74c402c3-3405-4071-a242-cbbd13ef366b" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_74c402c3-3405-4071-a242-cbbd13ef366b.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_74c402c3-3405-4071-a242-cbbd13ef366b.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 21643&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"548b-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;1d970-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/bootstrap.min.css"
+    path="/css/bootstrap.min.css" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="121200" serverUid="Server"
+    slaProfileEnabled="false" uid="6d54bdc2-59b3-4a7d-a021-4b945d460b5d" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_6d54bdc2-59b3-4a7d-a021-4b945d460b5d.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_6d54bdc2-59b3-4a7d-a021-4b945d460b5d.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 121200&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"1d970-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;b9fa-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/animate.min.css" path="/css/animate.min.css"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="47610" serverUid="Server"
+    slaProfileEnabled="false" uid="ca5601d8-342f-4634-8a13-c2872a29fcba" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_ca5601d8-342f-4634-8a13-c2872a29fcba.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_ca5601d8-342f-4634-8a13-c2872a29fcba.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 47610&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"b9fa-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;5c4-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/owl.carousel.css"
+    path="/css/owl.carousel.css" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="1476" serverUid="Server"
+    slaProfileEnabled="false" uid="99ea9cc7-2813-4a1e-bdfd-24edaadff0dd" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_99ea9cc7-2813-4a1e-bdfd-24edaadff0dd.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_99ea9cc7-2813-4a1e-bdfd-24edaadff0dd.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 1476&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"5c4-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;686-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/owl.theme.css" path="/css/owl.theme.css"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="1670" serverUid="Server"
+    slaProfileEnabled="false" uid="11978961-971c-4012-a43f-979669f1a62a" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_11978961-971c-4012-a43f-979669f1a62a.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_11978961-971c-4012-a43f-979669f1a62a.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 1670&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"686-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;892b-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/style.blue.css" path="/css/style.blue.css"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="35115" serverUid="Server"
+    slaProfileEnabled="false" uid="e4dcfaa7-f797-43d8-bb75-e8356ef2dd61" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_e4dcfaa7-f797-43d8-bb75-e8356ef2dd61.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_e4dcfaa7-f797-43d8-bb75-e8356ef2dd61.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 35115&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"892b-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=UTF-8"
+    eTag="W/&quot;25-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/css/custom.css" path="/css/custom.css"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200" responseSize="37" serverUid="Server"
+    slaProfileEnabled="false" uid="512abb38-ea1b-4ace-903a-5e85415359e4" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_512abb38-ea1b-4ace-903a-5e85415359e4.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_512abb38-ea1b-4ace-903a-5e85415359e4.txt</requestContentFileDescription>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 37&#xd;
+Content-Type: text/css; charset=UTF-8&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"25-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;11ef-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/respond.min.js" path="/js/respond.min.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="4591" serverUid="Server" slaProfileEnabled="false"
+    uid="12905a87-c843-4221-b5c0-c1dea2e33d41" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_12905a87-c843-4221-b5c0-c1dea2e33d41</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_12905a87-c843-4221-b5c0-c1dea2e33d41.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 4591&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"11ef-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="2"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;1787d-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/jquery-1.11.0.min.js"
+    path="/js/jquery-1.11.0.min.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="96381" serverUid="Server" slaProfileEnabled="false"
+    uid="b6db5408-211c-484c-8a6f-e61347af75e4" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_b6db5408-211c-484c-8a6f-e61347af75e4</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_b6db5408-211c-484c-8a6f-e61347af75e4.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 96381&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"1787d-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="3"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;90b5-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/bootstrap.min.js" path="/js/bootstrap.min.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="37045" serverUid="Server" slaProfileEnabled="false"
+    uid="a80eb794-9b32-4020-b8c8-67cefb67edd3" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_a80eb794-9b32-4020-b8c8-67cefb67edd3</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_a80eb794-9b32-4020-b8c8-67cefb67edd3.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 37045&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"90b5-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="4"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;c31-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/jquery.cookie.js" path="/js/jquery.cookie.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="3121" serverUid="Server" slaProfileEnabled="false"
+    uid="4843e0f7-982c-45d6-8c2d-5d0c766fdbed" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_4843e0f7-982c-45d6-8c2d-5d0c766fdbed</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_4843e0f7-982c-45d6-8c2d-5d0c766fdbed.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 3121&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"c31-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="5"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;1f6c-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/waypoints.min.js" path="/js/waypoints.min.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="8044" serverUid="Server" slaProfileEnabled="false"
+    uid="0da1bf2f-7ada-4ecb-972b-1cf2a08bc83b" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_0da1bf2f-7ada-4ecb-972b-1cf2a08bc83b</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_0da1bf2f-7ada-4ecb-972b-1cf2a08bc83b.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 8044&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"1f6c-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="6"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;c897-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/modernizr.js" path="/js/modernizr.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="51351" serverUid="Server" slaProfileEnabled="false"
+    uid="6b5795dd-e850-4833-ba87-7930bc316c1d" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_6b5795dd-e850-4833-ba87-7930bc316c1d</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_6b5795dd-e850-4833-ba87-7930bc316c1d.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 51351&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"c897-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="7"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;d60-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/bootstrap-hover-dropdown.js"
+    path="/js/bootstrap-hover-dropdown.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="3424" serverUid="Server" slaProfileEnabled="false"
+    uid="c36baaf0-8d6b-47ed-b7e4-3ecf8b4c7f44" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_c36baaf0-8d6b-47ed-b7e4-3ecf8b4c7f44</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_c36baaf0-8d6b-47ed-b7e4-3ecf8b4c7f44.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 3424&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"d60-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="8"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;3a44-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/owl.carousel.min.js"
+    path="/js/owl.carousel.min.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="14916" serverUid="Server" slaProfileEnabled="false"
+    uid="0d37105a-3c21-409d-b317-d3e2d13870f0" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_0d37105a-3c21-409d-b317-d3e2d13870f0</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_0d37105a-3c21-409d-b317-d3e2d13870f0.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 14916&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"3a44-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="9"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;26f6-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/jquery.query-object.js"
+    path="/js/jquery.query-object.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="9974" serverUid="Server" slaProfileEnabled="false"
+    uid="b1c89a75-0005-48ac-862f-d0bf14ecb666" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_b1c89a75-0005-48ac-862f-d0bf14ecb666</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_b1c89a75-0005-48ac-862f-d0bf14ecb666.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 9974&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"26f6-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="11"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;2280-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/client.js" path="/js/client.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="8832" serverUid="Server" slaProfileEnabled="false"
+    uid="04db80a6-ee5d-4616-9019-0b6bfe861edb" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_04db80a6-ee5d-4616-9019-0b6bfe861edb</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_04db80a6-ee5d-4616-9019-0b6bfe861edb.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 8832&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"2280-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="12"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/javascript"
+    eTag="W/&quot;1006-16b28833968&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 05 Jun 2019 16:40:17 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/js/front.js" path="/js/front.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/9941e109-9ec6-4038-8f67-7369b238bc56.zip"
+    recordedResponseCode="200"
+    refererUid="666193bb-4c38-439d-8a2d-034959c10885"
+    responseSize="4102" serverUid="Server" slaProfileEnabled="false"
+    uid="409b4b0a-4096-4be6-9154-1df077c1a197" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_409b4b0a-4096-4be6-9154-1df077c1a197</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_409b4b0a-4096-4be6-9154-1df077c1a197.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755171607|1559753258804; dtSa=true%7CC%7C-1%7C2%20item%28s%29%20in%20cart%7C-%7C1559753371542%7C353362473_154%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D03fef6ac-1896-4ce8-bd69-b798f85c6e0b%7CWeaveSocks%7C1559753368602%7C; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/basket.html"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Accept-Ranges: bytes&#xd;
+Cache-Control: public, max-age=0&#xd;
+Content-Length: 4102&#xd;
+Content-Type: application/javascript&#xd;
+Date: Wed, 05 Jun 2019 16:49:31 GMT&#xd;
+Etag: W/"1006-16b28833968"&#xd;
+Last-Modified: Wed, 05 Jun 2019 16:40:17 GMT&#xd;
+X-Powered-By: Express</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="10"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>

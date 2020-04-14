@@ -1,0 +1,3 @@
+<loop-action loop="${iteminCart_matchNr}" name="loopproiducts" uid="2d2f5076-c185-4349-8e50-ffdc2aa1f31f">
+    <embedded-action>c9809d0a-b03e-49fb-b72a-fb061c449715</embedded-action>
+</loop-action>

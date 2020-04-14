@@ -1,0 +1,13 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="top deals" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="d4e3f6dc-16ea-45f2-96db-8aff136d0cbb" weightsEnabled="false">
+    <weighted-embedded-action uid="acb90ef1-5a00-4c22-bfde-bc1774b69a4d"/>
+    <weighted-embedded-action uid="46e21511-a6db-441e-938d-dc145959d6fb"/>
+    <weighted-embedded-action uid="6c01374c-be46-4f75-88a4-b04a300d6393"/>
+    <weighted-embedded-action uid="18507255-64bc-4ae9-b0d7-b09f4fbd75e6"/>
+    <weighted-embedded-action uid="b8d77cfc-2139-4620-a367-4df3f2adddcc"/>
+    <weighted-embedded-action uid="a3a6e1ed-8651-4597-80f0-04436514f466"/>
+    <weighted-embedded-action uid="85465b82-f86b-4276-b78f-e4d18c8a3475"/>
+    <weighted-embedded-action uid="22a421de-0624-4add-ba91-cf1d6be93e8b"/>
+</basic-logical-action-container>

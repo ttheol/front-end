@@ -1,0 +1,30 @@
+<http-action actionType="1" contentType="text/plain; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/catalogue/819e1fbf-8b7e-4f6d-811f-693534916a8b"
+    path="/catalogue/${iteminCart_${loopproiducts_counter}}"
+    postType="1" recordedResponseCode="200" responseSize="275"
+    serverUid="Server" slaProfileEnabled="false"
+    uid="c9809d0a-b03e-49fb-b72a-fb061c449715" useKeepAlive="false">
+    <responsePageFileDescription>team/vus/@buyer/%resources%/recorded-responses/res_c9809d0a-b03e-49fb-b72a-fb061c449715</responsePageFileDescription>
+    <requestContentFileDescription>team/vus/@buyer/%resources%/recorded-requests/req_c9809d0a-b03e-49fb-b72a-fb061c449715.txt</requestContentFileDescription>
+    <header name="Accept" value="application/json, text/javascript, */*; q=0.01"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Cache-Control" value="max-age=0"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353362473_154h8vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755163025|1559753258804; dtSa=-; dtLatC=15; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/detail.html?id=03fef6ac-1896-4ce8-bd69-b798f85c6e0b"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <header name="x-dtpc" value="1$353362473_154h8vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAOe-1"/>
+    <header name="X-Requested-With" value="XMLHttpRequest"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Date: Wed, 05 Jun 2019 16:49:23 GMT&#xd;
+X-Powered-By: Express&#xd;
+Content-Length: 275&#xd;
+Content-Type: text/plain; charset=utf-8</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

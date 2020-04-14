@@ -1,0 +1,39 @@
+<http-page executeResourcesDynamically="false" name="/cart"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/6febcb17-0f0e-4b41-8490-a8157057ae5e.zip"
+    slaProfileEnabled="false" thinkTime="6498"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="6febcb17-0f0e-4b41-8490-a8157057ae5e">
+    <embedded-action>ca086b26-9aad-4cb1-afd6-9d9d7edd4b96</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_9b88fed4-74c4-4bdc-ac03-7c3df7b07a03.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/plain; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="/cart" path="/cart" postType="4"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/6febcb17-0f0e-4b41-8490-a8157057ae5e.zip"
+    recordedResponseCode="201" responseSize="0" serverUid="Server"
+    slaProfileEnabled="false" uid="ca086b26-9aad-4cb1-afd6-9d9d7edd4b96" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_ca086b26-9aad-4cb1-afd6-9d9d7edd4b96</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_34e3823d-40fe-49c3-bbd7-363939e8bb77.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Content-Type" value="application/json; charset=utf-8"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353347929_348h10vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755161601|1559753258804; dtSa=-; dtLatC=1; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/detail.html?id=03fef6ac-1896-4ce8-bd69-b798f85c6e0b"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <header name="x-dtpc" value="1$353347929_348h10vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAOe-1"/>
+    <header name="X-Requested-With" value="XMLHttpRequest"/>
+    <responseHeaders>HTTP/1.1 201 Created&#xd;
+Date: Wed, 05 Jun 2019 16:49:21 GMT&#xd;
+X-Powered-By: Express&#xd;
+Content-Length: 0&#xd;
+Content-Type: text/plain; charset=utf-8</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+    <textPostContent><![CDATA[{"id":"${top_product}"}]]></textPostContent>
+</http-action>

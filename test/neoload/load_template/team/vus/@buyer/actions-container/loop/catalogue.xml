@@ -1,0 +1,9 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="catalogue" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="1772479a-cb92-4105-8d40-8b3a6a9954a1" weightsEnabled="false">
+    <weighted-embedded-action uid="aea23943-f222-4c08-9434-4d8a4dea8277"/>
+    <weighted-embedded-action uid="a58d5451-00be-47ab-b88e-73743a892ef8"/>
+    <weighted-embedded-action uid="a5307c49-754b-4c91-928b-e01a1ba8bc5a"/>
+    <weighted-embedded-action uid="e7759cda-f595-4225-8af5-b6d6b2ca399e"/>
+</basic-logical-action-container>

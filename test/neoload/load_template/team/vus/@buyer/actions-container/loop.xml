@@ -1,0 +1,5 @@
+<loop-action loop="${cartnumber}" name="loop" uid="9ebfb6ec-9c6c-4fbc-bcd1-080d58511193">
+    <embedded-action>1772479a-cb92-4105-8d40-8b3a6a9954a1</embedded-action>
+    <embedded-action>de72f8ac-f6ce-4602-951d-72ea3be9cef1</embedded-action>
+    <embedded-action>fc582307-5e34-4c38-8d0a-a9761cd2c95c</embedded-action>
+</loop-action>

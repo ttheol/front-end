@@ -1,0 +1,534 @@
+<!--****** MONITORED HOSTS ******-->
+<monitored-host-system host-name="" load-generator="false" uid="NeoLoad">
+    <embedded-action>e27cd932-2b77-41e8-bb13-07413afefeb2</embedded-action>
+</monitored-host-system>
+<monitored-host-system host-name="localhost:7100" load-generator="true" uid="LG localhost:7100">
+    <embedded-action>a4218ce7-ecdb-4ec2-8cf6-270e8ec44468</embedded-action>
+</monitored-host-system>
+<!--****** END MONITORED HOSTS ******-->
+<!--****** MONITOR CONNECTIONS ******-->
+<connection-system interval="1000" name="NeoLoad" server-port="0" uid="e27cd932-2b77-41e8-bb13-07413afefeb2">
+    <monitor-category name="Default" short-display-name="Default">
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="UserLoad" sampling="0" unit=""/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="throughput" sampling="0" unit="Mb/s"/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="Alerts" sampling="0" unit=""/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="CriticalAlerts" sampling="0" unit=""/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="WarningAlerts" sampling="0" unit=""/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="cpu" sampling="0"
+            threshold="8002186a-8d8e-476d-83ce-87b7dd803b38" unit="%"/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="memory" sampling="0"
+            threshold="13e9395b-64e5-414b-a302-ad6a565d55e9" unit="%"/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="threadcount" sampling="0" unit=""/>
+        <monitor-category name="Load Generator Connections" short-display-name="Load Generator Connections">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="connectedlg" sampling="0" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="totallgdisconnections"
+                sampling="0"
+                threshold="62048620-f8aa-4f3c-885f-da7fe926d031" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="totallgreconnections" sampling="0" unit=""/>
+        </monitor-category>
+        <monitor-category name="Network" short-display-name="Network">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="otcp.NeoLoad" sampling="0" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="tcp.NeoLoad" sampling="0" unit=""/>
+            <monitor-category name="wlp2s0 (wlp2s0)" short-display-name="wlp2s0 (wlp2s0)">
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="ibytesperinterface~NeoLoad~wlp2s0"
+                    sampling="0" unit="Mb/s"/>
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="obytesperinterface~NeoLoad~wlp2s0"
+                    sampling="0" unit="Mb/s"/>
+            </monitor-category>
+            <monitor-category name="enp0s31f6 (enp0s31f6)" short-display-name="enp0s31f6 (enp0s31f6)">
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="ibytesperinterface~NeoLoad~enp0s31f6"
+                    sampling="0" unit="Mb/s"/>
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="obytesperinterface~NeoLoad~enp0s31f6"
+                    sampling="0" unit="Mb/s"/>
+            </monitor-category>
+        </monitor-category>
+        <monitor-category name="NeoLoad Web" short-display-name="NeoLoad Web">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="nlwebdownload" sampling="0" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="nlwebupload" sampling="0" unit=""/>
+        </monitor-category>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="SapUserLoad" sampling="0" unit=""/>
+    </monitor-category>
+    <monitor-category name="Zones" short-display-name="Zones">
+        <monitor-category name="Default zone" short-display-name="Default zone">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="zoneuserload~Default zone"
+                sampling="0" unit=""/>
+            <monitor-category name="Population_Dynatrace_Integration" short-display-name="Population_Dynatrace_Integration">
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="zoneuserloadperpopulation~Default zone~Population_Dynatrace_Integration"
+                    sampling="0" unit=""/>
+                <monitor-category name="Dynatrace_Integration" short-display-name="Dynatrace_Integration">
+                    <monitor-wrapped-statistic callTime="ON_BENCH"
+                        computing="0" format="NUMBER"
+                        name="zoneuserloadperpopulation~Default zone~Population_Dynatrace_Integration~Dynatrace_Integration"
+                        sampling="0" unit=""/>
+                </monitor-category>
+            </monitor-category>
+            <monitor-category name="Population_Buyer" short-display-name="Population_Buyer">
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="zoneuserloadperpopulation~Default zone~Population_Buyer"
+                    sampling="0" unit=""/>
+                <monitor-category name="Buyer" short-display-name="Buyer">
+                    <monitor-wrapped-statistic callTime="ON_BENCH"
+                        computing="0" format="NUMBER"
+                        name="zoneuserloadperpopulation~Default zone~Population_Buyer~Buyer"
+                        sampling="0" unit=""/>
+                </monitor-category>
+            </monitor-category>
+        </monitor-category>
+    </monitor-category>
+    <threshold enabled="true" uid="8002186a-8d8e-476d-83ce-87b7dd803b38">
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="LOW" valueMax="Infinity" valueMin="80.0">
+            <threshold-comment language="en">
+                <threshold-content>Controller CPU high.</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>CPU du Contrï¿½leur surchargï¿½.</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="HIGH" valueMax="Infinity" valueMin="90.0">
+            <threshold-comment language="en">
+                <threshold-content>Controller CPU high.</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>CPU du Contrï¿½leur surchargï¿½.</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+    </threshold>
+    <threshold enabled="true" uid="13e9395b-64e5-414b-a302-ad6a565d55e9">
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="LOW" valueMax="Infinity" valueMin="80.0">
+            <threshold-comment language="en">
+                <threshold-content>Too high amount of memory used</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Quantitï¿½ de mï¿½moire en cours d'utilisation ï¿½levï¿½e</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="HIGH" valueMax="Infinity" valueMin="90.0">
+            <threshold-comment language="en">
+                <threshold-content>Too high amount of memory used</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Quantitï¿½ de mï¿½moire en cours d'utilisation ï¿½levï¿½e</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+    </threshold>
+    <threshold enabled="true" uid="62048620-f8aa-4f3c-885f-da7fe926d031">
+        <threshold-condition durationKind="NB_OF_TIMES"
+            durationNumber="1" operator="GREATER_THAN" severity="LOW"
+            valueMax="Infinity" valueMin="1.0">
+            <threshold-comment language="en">
+                <threshold-content>Load Generator Diconnected &gt;=1</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Injecteur  dï¿½connectï¿½ &gt;= 1</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+    </threshold>
+</connection-system>
+<connection-system interval="1000" name="NeoLoad" server-port="0" uid="a4218ce7-ecdb-4ec2-8cf6-270e8ec44468">
+    <monitor-category name="Default" short-display-name="Default">
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="lgcpu.localhost:7100" sampling="0"
+            threshold="ce7f58a7-ad39-464e-a995-23c508305fc1" unit="%"/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="lgmemory.localhost:7100" sampling="0"
+            threshold="65e1c437-760a-467e-8e7a-be294e26fac7" unit="%"/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="lgthroughput.localhost:7100"
+            sampling="0" unit="Mb/s"/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER"
+            name="lguserloadperpopulation~localhost:7100" sampling="0" unit=""/>
+        <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+            format="NUMBER" name="lgthreadcount.localhost:7100"
+            sampling="0" unit=""/>
+        <monitor-category name="Http client" short-display-name="Http client">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER"
+                name="lg.jetty.httpclient.threadpool.used.localhost:7100"
+                sampling="0" unit="%"/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER"
+                name="lg.jetty.httpclient.taskpool.used.localhost:7100"
+                sampling="0"
+                threshold="b2ea430b-5fcf-4c99-bae2-fc38fba0c7ca" unit="%"/>
+        </monitor-category>
+        <monitor-category name="Controller Connection" short-display-name="Controller Connection">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="lgdisconnections.localhost:7100"
+                sampling="0" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="lgreconnections.localhost:7100"
+                sampling="0" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="lgping.localhost:7100"
+                sampling="0" unit="ms"/>
+        </monitor-category>
+        <monitor-category name="Network" short-display-name="Network">
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="lgotcp.localhost:7100"
+                sampling="0" unit=""/>
+            <monitor-wrapped-statistic callTime="ON_BENCH" computing="0"
+                format="NUMBER" name="lgtcp.localhost:7100" sampling="0" unit=""/>
+            <monitor-category name="wlp2s0 (wlp2s0)" short-display-name="wlp2s0 (wlp2s0)">
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="lgibytesperinterface~localhost:7100~wlp2s0"
+                    sampling="0" unit="Mb/s"/>
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="lgobytesperinterface~localhost:7100~wlp2s0"
+                    sampling="0" unit="Mb/s"/>
+            </monitor-category>
+            <monitor-category name="enp0s31f6 (enp0s31f6)" short-display-name="enp0s31f6 (enp0s31f6)">
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="lgibytesperinterface~localhost:7100~enp0s31f6"
+                    sampling="0" unit="Mb/s"/>
+                <monitor-wrapped-statistic callTime="ON_BENCH"
+                    computing="0" format="NUMBER"
+                    name="lgobytesperinterface~localhost:7100~enp0s31f6"
+                    sampling="0" unit="Mb/s"/>
+            </monitor-category>
+        </monitor-category>
+    </monitor-category>
+    <threshold enabled="true" uid="ce7f58a7-ad39-464e-a995-23c508305fc1">
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="LOW" valueMax="Infinity" valueMin="80.0">
+            <threshold-comment language="en">
+                <threshold-content>Load generator CPU high.</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>CPU de l'injecteur surchargï¿½.</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="HIGH" valueMax="Infinity" valueMin="90.0">
+            <threshold-comment language="en">
+                <threshold-content>Load generator CPU high.</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>CPU de l'injecteur surchargï¿½.</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+    </threshold>
+    <threshold enabled="true" uid="65e1c437-760a-467e-8e7a-be294e26fac7">
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="LOW" valueMax="Infinity" valueMin="80.0">
+            <threshold-comment language="en">
+                <threshold-content>Too high amount of memory used</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Quantitï¿½ de mï¿½moire en cours d'utilisation ï¿½levï¿½e</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="HIGH" valueMax="Infinity" valueMin="90.0">
+            <threshold-comment language="en">
+                <threshold-content>Too high amount of memory used</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Quantitï¿½ de mï¿½moire en cours d'utilisation ï¿½levï¿½e</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+    </threshold>
+    <threshold enabled="true" uid="b2ea430b-5fcf-4c99-bae2-fc38fba0c7ca">
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="LOW" valueMax="Infinity" valueMin="70.0">
+            <threshold-comment language="en">
+                <threshold-content>Too high amount of tasks queue by Jetty</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Quantitï¿½ de tï¿½ches Jetty en cours d'exï¿½cution ï¿½levï¿½e</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+        <threshold-condition durationKind="SECONDS" durationNumber="15"
+            operator="GREATER_THAN" severity="HIGH" valueMax="Infinity" valueMin="90.0">
+            <threshold-comment language="en">
+                <threshold-content>Too high amount of tasks queue by Jetty</threshold-content>
+            </threshold-comment>
+            <threshold-comment language="fr">
+                <threshold-content>Quantitï¿½ de tï¿½ches Jetty en cours d'exï¿½cution ï¿½levï¿½e</threshold-content>
+            </threshold-comment>
+        </threshold-condition>
+    </threshold>
+</connection-system>
+<!--****** END MONITOR CONNECTIONS ******-->
+<!--****** DASHBOARDS  ******-->
+<dashboards defaultDashboardUid="Graph board"/>
+<charts-model-description name="Graph board">
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="1375b233-ff75-4135-b5d8-b6c4c09ad28f"
+            color="20,106,203" connectionName="NeoLoad" dashed="false"
+            monitorName="UserLoad" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+        <action-curve-description
+            actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+            benchUid="1375b233-ff75-4135-b5d8-b6c4c09ad28f"
+            color="200,0,0" dashed="false" populationName="" scale="1.0"
+            selected="false" statisticName="result.errors" zoneName=""/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="1375b233-ff75-4135-b5d8-b6c4c09ad28f"
+            color="42,89,26" connectionName="NeoLoad" dashed="false"
+            monitorName="throughput" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="1375b233-ff75-4135-b5d8-b6c4c09ad28f"
+            color="0,255,0" connectionName="NeoLoad" dashed="false"
+            monitorName="lgcpu.localhost:7100"
+            monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+    </chart-description>
+    <empty-chart-description/>
+</charts-model-description>
+<charts-model-description name="Graph board_1">
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="3149f379-070a-4375-aff2-f32ed5641c37"
+            color="20,106,203" connectionName="NeoLoad" dashed="false"
+            monitorName="UserLoad" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+        <action-curve-description
+            actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+            benchUid="3149f379-070a-4375-aff2-f32ed5641c37"
+            color="200,0,0" dashed="false" populationName="" scale="1.0"
+            selected="false" statisticName="result.errors" zoneName=""/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="3149f379-070a-4375-aff2-f32ed5641c37"
+            color="42,89,26" connectionName="NeoLoad" dashed="false"
+            monitorName="throughput" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="3149f379-070a-4375-aff2-f32ed5641c37"
+            color="0,255,0" connectionName="NeoLoad" dashed="false"
+            monitorName="lgcpu.localhost:7100"
+            monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+    </chart-description>
+</charts-model-description>
+<charts-model-description name="Graph board_2">
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="629072fe-9599-4e36-a965-ceaa7b0c7ae0"
+            color="20,106,203" connectionName="NeoLoad" dashed="false"
+            monitorName="UserLoad" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+        <action-curve-description
+            actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+            benchUid="629072fe-9599-4e36-a965-ceaa7b0c7ae0"
+            color="200,0,0" dashed="false" populationName="" scale="1.0"
+            selected="false" statisticName="result.errors" zoneName=""/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="629072fe-9599-4e36-a965-ceaa7b0c7ae0"
+            color="42,89,26" connectionName="NeoLoad" dashed="false"
+            monitorName="throughput" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="629072fe-9599-4e36-a965-ceaa7b0c7ae0"
+            color="0,255,0" connectionName="NeoLoad" dashed="false"
+            monitorName="lgcpu.localhost:7100"
+            monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+    </chart-description>
+</charts-model-description>
+<charts-model-description name="Graph board_3">
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="37e53160-eba0-4b0f-8f94-3d22d98da7a3"
+            color="20,106,203" connectionName="NeoLoad" dashed="false"
+            monitorName="UserLoad" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+        <action-curve-description
+            actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+            benchUid="37e53160-eba0-4b0f-8f94-3d22d98da7a3"
+            color="200,0,0" dashed="false" populationName="" scale="1.0"
+            selected="false" statisticName="result.errors" zoneName=""/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="37e53160-eba0-4b0f-8f94-3d22d98da7a3"
+            color="42,89,26" connectionName="NeoLoad" dashed="false"
+            monitorName="throughput" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="37e53160-eba0-4b0f-8f94-3d22d98da7a3"
+            color="0,255,0" connectionName="NeoLoad" dashed="false"
+            monitorName="lgcpu.localhost:7100"
+            monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+    </chart-description>
+</charts-model-description>
+<charts-model-description name="Graph board_4">
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="290b35c8-17ca-4f86-9072-e679d434f1c4"
+            color="20,106,203" connectionName="NeoLoad" dashed="false"
+            monitorName="UserLoad" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+        <action-curve-description
+            actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+            benchUid="290b35c8-17ca-4f86-9072-e679d434f1c4"
+            color="200,0,0" dashed="false" populationName="" scale="1.0"
+            selected="false" statisticName="result.errors" zoneName=""/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="290b35c8-17ca-4f86-9072-e679d434f1c4"
+            color="42,89,26" connectionName="NeoLoad" dashed="false"
+            monitorName="throughput" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="290b35c8-17ca-4f86-9072-e679d434f1c4"
+            color="0,255,0" connectionName="NeoLoad" dashed="false"
+            monitorName="lgcpu.localhost:7100"
+            monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+    </chart-description>
+</charts-model-description>
+<charts-model-description name="Graph board_5">
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="9dee9cc0-e1bd-4f2a-8347-faaf19f6d410"
+            color="20,106,203" connectionName="NeoLoad" dashed="false"
+            monitorName="UserLoad" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+        <action-curve-description
+            actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+            benchUid="9dee9cc0-e1bd-4f2a-8347-faaf19f6d410"
+            color="200,0,0" dashed="false" populationName="" scale="1.0"
+            selected="false" statisticName="result.errors" zoneName=""/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="9dee9cc0-e1bd-4f2a-8347-faaf19f6d410"
+            color="42,89,26" connectionName="NeoLoad" dashed="false"
+            monitorName="throughput" monitoredHostName="NeoLoad"
+            scale="1.0" selected="false"/>
+    </chart-description>
+    <chart-description autoRange="true"
+        chart-description-type="chart-description-type"
+        domainMarkerVisible="true" granularityLevel="0"
+        historyState="XMIN" includeInReport="false"
+        rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+        <monitor-curve-description
+            benchUid="9dee9cc0-e1bd-4f2a-8347-faaf19f6d410"
+            color="0,255,0" connectionName="NeoLoad" dashed="false"
+            monitorName="lgcpu.localhost:7100"
+            monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+    </chart-description>
+    <empty-chart-description/>
+</charts-model-description>
+<!--****** END DASHBOARDS  ******-->
+<!--****** RESULTS GRAPH DESC TEMPLATES ******-->
+<charts-templates-description name="template.customs"/>

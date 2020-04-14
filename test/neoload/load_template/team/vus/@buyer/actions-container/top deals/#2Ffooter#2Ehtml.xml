@@ -1,0 +1,6 @@
+<http-page executeResourcesDynamically="false" name="/footer.html"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/18507255-64bc-4ae9-b0d7-b09f4fbd75e6.zip"
+    slaProfileEnabled="false" thinkTime="0"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="18507255-64bc-4ae9-b0d7-b09f4fbd75e6"/>

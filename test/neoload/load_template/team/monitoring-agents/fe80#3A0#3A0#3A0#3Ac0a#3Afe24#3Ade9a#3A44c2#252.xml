@@ -1,0 +1,29 @@
+<me-host citrixSupport="false" loadWeight="1" sapSupport="false"
+    standalone="false" supportWANEmulation="false"
+    uid="fe80:0:0:0:c0a:fe24:de9a:44c2%2" version="6.10.0;build=20190514-4">
+    <!--****** LG NETWORK INTERFACES ******-->
+    <lg-networkiface description="en0" enabled="false"
+        isLoopBack="false" name="en0">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="10.0.4.7">
+            <ip value="10.0.4.7"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:c0a:fe24:de9a:44c2%en0">
+            <ip value="fe80:0:0:0:c0a:fe24:de9a:44c2%en0"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+    <lg-networkiface description="lo0" enabled="false" isLoopBack="true" name="lo0">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="localhost">
+            <ip value="127.0.0.1"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="0:0:0:0:0:0:0:1">
+            <ip value="0:0:0:0:0:0:0:1"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:0:0:0:1%lo0">
+            <ip value="fe80:0:0:0:0:0:0:1%lo0"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+</me-host>

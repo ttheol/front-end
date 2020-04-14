@@ -1,0 +1,3 @@
+<variable-constant constantValue="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com" name="host" order="1" policy="4" range="2" uid="67b3dba8-bc67-3810-9892-eb77249db32e" whenOutOfValues="CYCLE_VALUES">
+<description>host</description>
+</variable-constant>

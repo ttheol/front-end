@@ -1,0 +1,9 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="Home PAge" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="de1a677b-a641-4303-8a5f-b3ab001c3e3e" weightsEnabled="false">
+    <weighted-embedded-action uid="71e62b7d-f767-4491-9539-5eca09b1e255"/>
+    <weighted-embedded-action uid="ad759f09-8b0a-42f2-ae30-5f90bf89342a"/>
+    <weighted-embedded-action uid="cd51f4cd-c60d-4bcf-b071-7e7a32eff0dd"/>
+    <weighted-embedded-action uid="ef51ce1a-8683-4e8d-852d-1cfe0a497a7c"/>
+</basic-logical-action-container>

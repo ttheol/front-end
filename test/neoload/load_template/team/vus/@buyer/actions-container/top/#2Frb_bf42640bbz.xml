@@ -1,0 +1,40 @@
+<http-page executeResourcesDynamically="false" name="/rb_bf42640bbz"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/ec735449-5d9e-433b-9e83-c3b22241090d.zip"
+    slaProfileEnabled="false" thinkTime="3982"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="ec735449-5d9e-433b-9e83-c3b22241090d">
+    <embedded-action>3d464bc2-7093-4d94-8c30-9403be8d0c0d</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_ec735449-5d9e-433b-9e83-c3b22241090d.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/plain; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="/rb_bf42640bbz" path="/rb_bf42640bbz"
+    postType="4"
+    recordedArtifactZipFileName="team/vus/@buyer/%resources%/recorded-artifacts/ec735449-5d9e-433b-9e83-c3b22241090d.zip"
+    recordedResponseCode="200" responseSize="499" serverUid="Server"
+    slaProfileEnabled="false" uid="3d464bc2-7093-4d94-8c30-9403be8d0c0d" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_3d464bc2-7093-4d94-8c30-9403be8d0c0d</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_3d464bc2-7093-4d94-8c30-9403be8d0c0d.txt</requestContentFileDescription>
+    <urlPostParameter encodeName="true" encodeValue="true" name="app"
+        recordRawValue="ea7c4b59f27d43eb" separator="="
+        value="ea7c4b59f27d43eb" valueMode="USE_VALUE"/>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Content-Type" value="text/plain;charset=UTF-8"/>
+    <header name="Cookie" value="_TRAEFIK_BACKEND=http://front-end:8079; rxVisitor=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99; dtPC=1$353331105_970h-vIMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO; rxvt=1559755139281|1559753258804; dtSa=-; dtLatC=5; md.sid=s%3Ap4Q-8ptuUAN2axSBM_GXcy6PAuvHWfiM.3E4e92Tact%2By6aHCBAPwKl3u2vNLxkSdD%2BZxujzWULQ; dtCookie=1$A946CA27656D726CF8E015468B3B1E7C|ea7c4b59f27d43eb|1"/>
+    <header name="Host" value="ec2-54-229-141-49.eu-west-1.compute.amazonaws.com"/>
+    <header name="Referer" value="http://ec2-54-229-141-49.eu-west-1.compute.amazonaws.com/detail.html?id=837ab141-399e-4c1f-9abc-bace40296bac"/>
+    <header name="User-Agent" value="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 499&#xd;
+Content-Type: text/plain; charset=utf-8&#xd;
+Date: Wed, 05 Jun 2019 16:48:59 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+    <textPostContent><![CDATA[$svrid=1$3p=1-1559753331005%3Bfonts.googleapis.com%7Cg%7C1%7C0%7C0%7C0%7C56_117%7C61%7C61%7C61%3Bec2-54-229-141-49.eu-west-1.compute.amazonaws.com%7Cu%7C5%7C0%7C0%7C0%7C0%7C5%7C%7C0%7C0%7C0%7C865_1116_1194_1271_1349_1496%7C111%7C4%7C251%7C11%7C0%7C0%7C0%7C0%7C11%7C%7C0%7C0%7C0%7C57_1079%7C413%7C79%7C1021%7C7%7C0%7C0%7C0%7C56_796%7C372%7C68%7C740%7C7%7C0%7C0%7C0%7C1133_1374%7C72%7C33%7C135$rt=1-1559753331005%3Bhttps%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%3A400%5Ec500%5Ec700%5Ec300%5Ec100%7Cb56e0m61%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Fowl.carousel.css%7Cb56e0f0g0h0i0k21l121m122u1745v1476w1476%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Ffont-awesome.css%7Cb56e0f0g0h0i0k20l57m375u21914v21643w21643%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Fanimate.min.css%7Cb56e0f0g0h0i0k21l160m528u47881v47610w47610%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Fbootstrap.min.css%7Cb56e0f0g0h0i0k21l71m740u121473v121200w121200%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Fowl.theme.css%7Cb57e0f0g0h0i0k20l66m68u1939v1670w1670%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Frespond.min.js%7Cb57e0f0g0h0i0k22l85m91u4860v4591w4591%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Fcustom.css%7Cb57e0f0g0h0i0k22l151m151u303v37w37%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcss%2Fstyle.blue.css%7Cb57e0f0g0h0i0k21l116m615u35386v35115w35115%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fbootstrap-hover-dropdown.js%7Cb58e0f0g0h0i0k24l77m79u3692v3424w3424%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fwaypoints.min.js%7Cb58e0f0g0h0i0k23l105m353u8313v8044w8044%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fjquery.cookie.js%7Cb58e0f0g0h0i0k22l483m483u3389v3121w3121%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fmodernizr.js%7Cb58e0f0g0h0i0k23l219m542u51621v51351w51351%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fbootstrap.min.js%7Cb58e0f0g0h0i0k22l111m662u37315v37045w37045%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fjquery-1.11.0.min.js%7Cb58e0f0g0h0i0k22l120m689u96652v96381w96381%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fowl.carousel.min.js%7Cb58e0f24g24h24i24k24l281m1021u15186v14916w14916%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fjquery.query-object.js%7Cb59e0f24g24h24i24k25l170m198u10243v9974w9974%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Ffront.js%7Cb59e0f24g24h24i24k24l200m204u4371v4102w4102%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fjs%2Fclient.js%7Cb59e0f25g25h25i25k25l205m216u9101v8832w8832%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Ffavicon.png%7Cb865e0f0g0h0i0k0l251m251v2846w2846%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Ftopbar.html%7Cb1133e0f0g0h0i0k0l32m35u6953v6579w6579z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fnavbar.html%7Cb1138e0f0g0h0i0k1l30m54u11102v10728w10728z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Ffooter.html%7Cb1142e0f0g0h0i0k1l41m45u3549v3177w3177z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcatalogue%2F837ab141-399e-4c1f-9abc-bace40296bac%7Cb1146e0f0g0h0i0k1l74m74u425v284w284z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fimg%2Flogo.png%7Cb1194e0f0g0h0i0k1l30m73u8739v8483w8483E2F12400%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fimg%2Flogo-small.png%7Cb1194e0f0g0h0i0k2l36m77u8739v8483w8483%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcart%7Cb1201e0f0g0h0i0k2l86m135u254v113w113z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcatalogue%3Fsort%3Did%26size%3D3%26tags%3Dbrown%7Cb1228e0f0g0h0i0k1l76m120u901v760w760z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcatalogue%2F819e1fbf-8b7e-4f6d-811f-693534916a8b%7Cb1341e0f0g0h0i0k2l33m33u416v275w275z1%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fcatalogue%2Fimages%2Fcolourful_5Fsocks.jpg%7Cb1349e0f0g0h0i0k0l1m4v486192w486192%7Chttp%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fimg%2Fproduct1.jpg%7Cb1349e0f0g0h0i0k1l29m147u64896v64638w64638$url=http%3A%2F%2Fec2-54-229-141-49.eu-west-1.compute.amazonaws.com%2Fdetail.html%3Fid%3D837ab141-399e-4c1f-9abc-bace40296bac$title=WeaveSocks$latC=5$app=ea7c4b59f27d43eb$visitID=IMBPMMBFDNOMEDDOXPIDDAMOIJCPEUAO$vs=1$fId=353331105_970$v=10169190521113456$vID=1559753258800B7753AIJRSRVQTPSH7BT2F0HVP9G3M99$time=1559753339281]]></textPostContent>
+</http-action>
