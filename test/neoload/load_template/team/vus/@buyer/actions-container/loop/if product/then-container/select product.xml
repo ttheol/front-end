@@ -1,6 +1,7 @@
 <basic-logical-action-container element-number="1" execution-type="0"
     name="select product" pacingEnd="0" pacingMode="MODE_NO_PACING"
     pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    traceVariableNamesAsString=""
     uid="d83f42e5-e0f9-476b-a60d-9edc5a1edac2" weightsEnabled="false">
     <weighted-embedded-action uid="43fb23e3-9216-43cd-81d7-6a10ad27bde8"/>
     <weighted-embedded-action uid="b8770a18-4183-4afd-8483-9a2553a5950e"/>

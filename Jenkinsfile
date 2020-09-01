@@ -78,55 +78,86 @@ pipeline {
 
 
 
+      stage('NeoLoad Test')
+     {
+      agent {
+      docker {
+          image 'python:3-alpine'
+          reuseNode true
+       }
 
-     stage('Run load test') {
+         }
+     stages {
+          stage('Get NeoLoad CLI') {
+                       steps {
+                         withEnv(["HOME=${env.WORKSPACE}"]) {
 
-            steps {
-                     sh "mkdir $WORKSPACE/test/neoload/load_template/custom-resources/"
+                          sh '''
+                               export PATH=~/.local/bin:$PATH
+                               pip3 install neoload
+                               neoload --version
+                           '''
 
-                     sh "cp $WORKSPACE/monspec/frontend_anomalieDection.json $WORKSPACE/test/neoload/load_template/custom-resources/"
-
-
-                     sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-                     sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-                     sh "sed -i 's/DTID_TO_REPLACE/${DYNATRACEID}/' $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-                     sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-                     sh "sed -i 's,JSONFILE_TO_REPLACE,front-end_monspec.json,'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-                     sh "sed -i 's/TAGS_TO_REPLACE/${NL_DT_TAG}/' $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-                     sh "sed -i 's,OUTPUTFILE_TO_REPLACE,$WORKSPACE/infrastructure/sanitycheck.json,'  $WORKSPACE/test/neoload/Frontend_neoload.yaml"
-
-
-                    sh "mkdir $WORKSPACE/test/neoload/neoload_project"
-                    sh "cp $WORKSPACE/test/neoload/Frontend_neoload.yaml $WORKSPACE/test/neoload/load_template/"
-                    sh "cd $WORKSPACE/test/neoload/load_template/ ; zip -r $WORKSPACE/test/neoload/neoload_project/neoloadproject.zip ./*"
+                         }
+                       }
+         }
 
 
-                    sh "docker run --rm \
-                                             -v $WORKSPACE/test/neoload/neoload_project/:/neoload-project \
-                                             -e NEOLOADWEB_TOKEN=$NLAPIKEY \
-                                             -e TEST_RESULT_NAME=Stage_load_${VERSION}_${BUILD_NUMBER} \
-                                             -e SCENARIO_NAME=FrontEndLoad \
-                                             -e CONTROLLER_ZONE_ID=defaultzone \
-                                             -e LG_ZONE_IDS=defaultzone:1 \
-                                             -e AS_CODE_FILES=Frontend_neoload.yaml \
-                                             --network ${APP_NAME} --user root\
-                                              neotys/neoload-web-test-launcher:latest"
-                      /*script {
-                          neoloadRun executable: '/home/neoload/neoload/bin/NeoLoadCmd',
-                                  project: "$WORKSPACE/test/neoload/load_template/load_template.nlp",
-                                  testName: 'Stage_load_${VERSION}_${BUILD_NUMBER}',
-                                  testDescription: 'Stage_load_${VERSION}_${BUILD_NUMBER}',
-                                  commandLineOption: "-project  $WORKSPACE/test/neoload/Frontend_neoload.yaml -nlweb -L Population_Buyer=$WORKSPACE/infrastructure/infrastructure/neoload/lg/remote.txt -L Population_Dynatrace_Integration=$WORKSPACE/infrastructure/infrastructure/neoload/lg/local.txt -nlwebToken $NLAPIKEY -variables host=ec2-54-229-141-49.eu-west-1.compute.amazonaws.com,port=80",
-                                  scenario: 'FrontEndLoad', sharedLicense: [server: 'NeoLoad Demo License', duration: 2, vuCount: 200],
-                                  trendGraphs: [
-                                          [name: 'Limit test Catalogue API Response time', curve: ['CatalogueList>Actions>Get Catalogue List'], statistic: 'average'],
-                                          'ErrorRate'
-                                  ]
-                      }*/
+         stage('Run load test') {
 
-                  }
+                steps {
+
+
+                         sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+                         sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+                         sh "sed -i 's/DTID_TO_REPLACE/${DYNATRACEID}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+                         sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+                         sh "sed -i 's/TAGS_TO_REPLACE/${NL_DT_TAG}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+
+
+                         sh """
+                               export PATH=~/.local/bin:$PATH
+                               neoload \
+                               login --workspace "Default Workspace" $NLAPIKEY \
+                               test-settings  --zone defaultzone --scenario FrontEndLoad use FrontDynatrace \
+                               project --path $WORKSPACE/test/neoload/load_template/ upload
+                          """
+
+
+
+
+                      }
+        }
+         stage('Run Test') {
+              steps {
+                withEnv(["HOME=${env.WORKSPACE}"]) {
+                  sh """
+                       export PATH=~/.local/bin:$PATH
+                       neoload run \
+                      --return-0 \
+                        --as-code Frontend_neoload.yaml \
+                        FrontDynatrace
+                     """
                 }
-
+              }
+         }
+         stage('Generate Test Report') {
+              steps {
+                withEnv(["HOME=${env.WORKSPACE}"]) {
+                    sh """
+                         export PATH=~/.local/bin:$PATH
+                         neoload test-results junitsla
+                       """
+                }
+              }
+              post {
+                  always {
+                      junit 'junit-sla.xml'
+                  }
+              }
+        }
+      }
+    }
 
     }
     post {

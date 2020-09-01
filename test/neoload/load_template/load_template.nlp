@@ -1,11 +1,11 @@
 # Project description file
 
 project.name=load_template
-project.version=7.0
+project.version=8.1
 project.original.version=6.5
 product.name=NeoLoad
 product.original.name=NeoLoad
-product.version=7.3.0
+product.version=7.5.0
 product.original.version=6.7.0
 project.id=d1655b5e-2621-4a61-8ba4-cfe0d397ef0c
 project.config.path=team

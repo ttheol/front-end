@@ -1,22 +1,8 @@
 <scenario postMonitoringTime="-1" preMonitoringTime="-1"
-    slaProfileEnabled="false" uid="DynatraceSanityCheck" virtualUsersStates="true">
+    slaProfileEnabled="false" traceVariables="true"
+    uid="DynatraceSanityCheck" virtualUsersStates="true">
     <!--****** POPULATION POLICY ******-->
     <population-policy name="Population_BasicCheckTesting">
-        <duration-policy-entry iterations="1" time="120" timeUnit="0" type="1"/>
-        <volume-policy-entry>
-            <constant-volume-policy iterationNumber="15" userNumber="1"/>
-        </volume-policy-entry>
-        <start-stop-policy-entry start-delay="0" start-type="0"
-            stop-delay="60000" stop-type="0"/>
-        <runtime-policy continueOnError="true" thinktimePolicy="0"
-            thinktimeValue="5000" vuStartDelay="0" vuStartMode="1"/>
-        <!--****** POPULATION LG HOSTS ******-->
-        <lg-hosts>
-            <lg-host-entry>$zoneID=Default zone;$lgID=localhost:7100</lg-host-entry>
-        </lg-hosts>
-    </population-policy>
-    <!--****** POPULATION POLICY ******-->
-    <population-policy name="Population_Dynatrace_Integration">
         <duration-policy-entry iterations="1" time="120" timeUnit="0" type="1"/>
         <volume-policy-entry>
             <constant-volume-policy iterationNumber="15" userNumber="1"/>
@@ -41,6 +27,7 @@
     <!--****** END DEBUG POLICY ******-->
     <!--****** START VU STATES ******-->
     <!--****** END VU STATES ******-->
+    <!--****** START EXCLUSION FILTER ******-->
     <request-path-exclusion-filter isEnabled="false">
         <regexps>
             <regexp>.*\.jpg</regexp>
@@ -57,4 +44,10 @@
             <regexp>.*\.properties</regexp>
         </regexps>
     </request-path-exclusion-filter>
+    <!--****** END  EXCLUSION FILTER ******-->
+    <!--****** START DYNATRACE MONITORING ******-->
+    <dynatrace-monitoring/>
+    <!--****** END  DYNATRACE MONITORING ******-->
+    <!--****** START TRACE VARIABLES ******-->
+    <!--****** END TRACE VARIABLES ******-->
 </scenario>

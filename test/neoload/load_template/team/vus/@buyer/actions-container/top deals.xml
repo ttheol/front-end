@@ -1,6 +1,7 @@
 <basic-logical-action-container element-number="1" execution-type="0"
     name="top deals" pacingEnd="0" pacingMode="MODE_NO_PACING"
     pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    traceVariableNamesAsString=""
     uid="d4e3f6dc-16ea-45f2-96db-8aff136d0cbb" weightsEnabled="false">
     <weighted-embedded-action uid="acb90ef1-5a00-4c22-bfde-bc1774b69a4d"/>
     <weighted-embedded-action uid="46e21511-a6db-441e-938d-dc145959d6fb"/>

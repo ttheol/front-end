@@ -1,4 +1,9 @@
 name: stage_neoload
+
+project_settings:
+  dynatrace.enabled: true
+  dynatrace.url: DTID_TO_REPLACE
+  dynatrace.token: APIKEY_TO_REPLACE
 variables:
 - constant:
     name: basicpath
@@ -12,21 +17,7 @@ variables:
 - constant:
     name: port
     value: PORT_TO_REPLACE
-- constant:
-    name: dynatraceApiKey
-    value: APIKEY_TO_REPLACE
-- constant:
-    name: dynatraceid
-    value: DTID_TO_REPLACE
-- constant:
-    name: jsonAnomalieDetectionFile
-    value: JSONFILE_TO_REPLACE
-- constant:
-    name: outPutReferenceFile
-    value: OUTPUTFILE_TO_REPLACE
-- constant:
-    name: TAGS
-    value: TAGS_TO_REPLACE
+
 scenarios:
 - name: FrontEndLoad
   populations:
@@ -39,3 +30,11 @@ scenarios:
     constant_load:
       users: 1
       duration: 5m
+  apm_configuration:
+    dynatrace_tags:
+    - TAGS_TO_REPLACE
+    dynatrace_anomaly_rules:
+    - metric_id: builtin:service.responsetime
+      operator: ABOVE
+      value: 100
+      severity: PERFORMANCE

@@ -1,6 +1,7 @@
 <basic-logical-action-container element-number="1" execution-type="0"
     name="Home PAge" pacingEnd="0" pacingMode="MODE_NO_PACING"
     pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    traceVariableNamesAsString=""
     uid="de1a677b-a641-4303-8a5f-b3ab001c3e3e" weightsEnabled="false">
     <weighted-embedded-action uid="71e62b7d-f767-4491-9539-5eca09b1e255"/>
     <weighted-embedded-action uid="ad759f09-8b0a-42f2-ae30-5f90bf89342a"/>
