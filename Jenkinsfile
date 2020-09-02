@@ -106,7 +106,7 @@ pipeline {
          stage('Run load test') {
 
                 steps {
-
+                     withEnv(["HOME=${env.WORKSPACE}"]) {
 
                          sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
                          sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
@@ -124,7 +124,7 @@ pipeline {
                           """
 
 
-
+                        }
 
                       }
         }
