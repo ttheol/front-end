@@ -10,9 +10,13 @@ pipeline {
     TAG_DEV = "${TAG}:DEV-${VERSION}"
     TAG_STAGING = "${TAG}-stagging:${VERSION}"
     GROUP="neotysdevopsdemo"
+    DYNATRACEID="https://${env.DT_ACCOUNTID}.live.dynatrace.com/"
+    DYNATRACEAPIKEY="${env.DT_API_TOKEN}"
+    NLAPIKEY="${env.NL_WEB_API_KEY}"
+    NL_DT_TAG="app:${env.APP_NAME},environment:dev"
     DOCKER_COMPOSE_TEMPLATE="$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose.template"
     DOCKER_COMPOSE_LG_FILE = "$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose-neoload.yml"
-    HOST="ec2-34-245-206-132.eu-west-1.compute.amazonaws.com"
+    HOST="ec2-52-50-215-174.eu-west-1.compute.amazonaws.com"
   }
   stages {
    /* stage('Checkout') {
@@ -48,11 +52,11 @@ pipeline {
 
     stage('create docker network') {
 
-                                  steps {
-                                       sh "docker network create ${APP_NAME} || true"
+          steps {
+               sh "docker network create ${APP_NAME} || true"
 
-                                  }
-                   }
+          }
+   }
 
     stage('Deploy to dev namespace') {
         steps {
@@ -110,7 +114,7 @@ pipeline {
 
                          sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
                          sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
-                         sh "sed -i 's,DTID_TO_REPLACE,${DYNATRACEID},' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+                         sh "sed -i 's,DTID_TO_REPLACE,${DYNATRACEID}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
                          sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
                          sh "sed -i 's/TAGS_TO_REPLACE/${NL_DT_TAG}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
 
