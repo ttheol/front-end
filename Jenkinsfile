@@ -13,7 +13,7 @@ pipeline {
     DYNATRACEID="https://${env.DT_ACCOUNTID}.live.dynatrace.com/"
     DYNATRACEAPIKEY="${env.DT_API_TOKEN}"
     NLAPIKEY="${env.NL_WEB_API_KEY}"
-    NL_DT_TAG="app:${env.APP_NAME},environment:dev"
+    NL_DT_TAG="app:${env.APP_NAME}"
     DOCKER_COMPOSE_TEMPLATE="$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose.template"
     DOCKER_COMPOSE_LG_FILE = "$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose-neoload.yml"
     HOST="ec2-52-50-215-174.eu-west-1.compute.amazonaws.com"
