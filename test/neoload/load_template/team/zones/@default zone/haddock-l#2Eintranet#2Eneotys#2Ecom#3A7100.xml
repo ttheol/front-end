@@ -1,7 +1,7 @@
-<lg-host citrixSupport="false"
+<lg-host citrixSupport="true"
     hostname="haddock-l.intranet.neotys.com:7100" loadWeight="1"
-    sapSupport="false" standalone="false" supportWANEmulation="true"
-    uid="35cae54c-553a-426f-aac2-83ac6c492fd9" version="6.10.0;build=20190514-29">
+    sapSupport="true" standalone="false" supportWANEmulation="false"
+    uid="35cae54c-553a-426f-aac2-83ac6c492fd9" version="7.6.0;build=20200901-2">
     <!--****** LG NETWORK INTERFACES ******-->
     <lg-networkiface description="Software Loopback Interface 1"
         enabled="false" isLoopBack="true" name="lo">
@@ -15,14 +15,26 @@
         <!--****** END LG ADDRESSES ******-->
     </lg-networkiface>
     <lg-networkiface
-        description="Broadcom NetXtreme 57xx Gigabit Controller"
+        description="Contrôleur Broadcom NetXtreme 57xx Gigabit"
         enabled="false" isLoopBack="false" name="eth3">
         <!--****** LG ADDRESSES ******-->
         <lg-address enabled="false" hostname="haddock-l.intranet.neotys.com">
-            <ip value="10.0.5.10"/>
+            <ip value="10.0.4.69"/>
         </lg-address>
-        <lg-address enabled="false" hostname="fe80:0:0:0:ac5d:a1bc:8bc:72ae%eth3">
-            <ip value="fe80:0:0:0:ac5d:a1bc:8bc:72ae%eth3"/>
+        <lg-address enabled="false" hostname="fe80:0:0:0:dde9:d9ff:7e2b:6f0c%eth3">
+            <ip value="fe80:0:0:0:dde9:d9ff:7e2b:6f0c%eth3"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+    <lg-networkiface
+        description="TAP-Windows Adapter V9 for OpenVPN Connect"
+        enabled="false" isLoopBack="false" name="net5">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="haddock-l.intranet.neotys.com">
+            <ip value="10.8.0.114"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:90e9:e3e3:a956:45e4%net5">
+            <ip value="fe80:0:0:0:90e9:e3e3:a956:45e4%net5"/>
         </lg-address>
         <!--****** END LG ADDRESSES ******-->
     </lg-networkiface>
