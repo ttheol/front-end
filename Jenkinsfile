@@ -20,6 +20,7 @@ pipeline {
     DOCKER_COMPOSE_LG_FILE = "$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose-neoload.yml"
     HOST="ec2-52-50-215-174.eu-west-1.compute.amazonaws.com"
     WAIT_TIME_KEPTN=5
+    PROJECT="sockshop"
 
   }
   stages {
