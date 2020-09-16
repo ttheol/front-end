@@ -1,3 +1,5 @@
+@Library('keptn-library')_
+import sh.keptn.Keptn
 
 pipeline {
   agent {
@@ -13,10 +15,12 @@ pipeline {
     DYNATRACEID="https://${env.DT_ACCOUNTID}.live.dynatrace.com/"
     DYNATRACEAPIKEY="${env.DT_API_TOKEN}"
     NLAPIKEY="${env.NL_WEB_API_KEY}"
-    NL_DT_TAG="app:${env.APP_NAME}"
+    NL_DT_TAG="app:${env.APP_NAME},environment:dev"
     DOCKER_COMPOSE_TEMPLATE="$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose.template"
     DOCKER_COMPOSE_LG_FILE = "$WORKSPACE/infrastructure/infrastructure/neoload/docker-compose-neoload.yml"
     HOST="ec2-52-50-215-174.eu-west-1.compute.amazonaws.com"
+    WAIT_TIME_KEPTN=5
+
   }
   stages {
    /* stage('Checkout') {
@@ -67,6 +71,19 @@ pipeline {
         }
 
     }
+     stage('init keptn')
+            {
+                    steps{
+                        script{
+                         def keptn = new sh.keptn.Keptn()
+                         keptn.keptnInit project:"${PROJECT}", service:"${APP_NAME}", stage:"dev" , monitoring:"dynatrace"
+                         keptn.keptnAddResources('keptn/sli.yaml','dynatrace/sli.yaml')
+                         keptn.keptnAddResources('keptn/slo.yaml','slo.yaml')
+                         keptn.keptnAddResources('keptn/dynatrace.conf.yaml','dynatrace/dynatrace.conf.yaml')
+                        }
+                     }
+
+            }
    stage('Start NeoLoad infrastructure') {
 
                               steps {
@@ -142,6 +159,10 @@ pipeline {
         }
          stage('Run Test') {
               steps {
+                     script{
+                                          def keptn = new sh.keptn.Keptn()
+                                          keptn.markEvaluationStartTime()
+                              }
                 withEnv(["HOME=${env.WORKSPACE}"]) {
                   sh """
                        export PATH=~/.local/bin:$PATH
@@ -156,7 +177,23 @@ pipeline {
 
       }
     }
+       stage('Evaluate Quality Gate')
+              {
+                  steps
+                  {
+                  script{
+                      def keptn = new sh.keptn.Keptn()
+                      def labels=[:]
+                      labels.put('TriggeredBy', 'PerfClinic')
+                      labels.put('PoweredBy', 'The Love Of Performance')
+                      def keptnContext = keptn.sendStartEvaluationEvent starttime:"", endtime:"", labels:labels
+                      echo "Open Keptns Bridge: ${keptn_bridge}/trace/${keptnContext}"
 
+                      def result = keptn.waitForEvaluationDoneEvent setBuildResult:true, waitTime:"${WAIT_TIME_KEPTN}"
+                      }
+                  }
+
+              }
     }
     post {
             always {
