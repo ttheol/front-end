@@ -1,0 +1,747 @@
+<connection-dynatrace interval="30000" name="Dynatrace" server-port="0" uid="fadba60e-660c-4359-b987-170e0b0382e4">
+    <monitor-category name="builtin" short-display-name="builtin">
+        <monitor-category name="host" short-display-name="host">
+            <monitor-category name="cpu" short-display-name="cpu">
+                <monitor-category name="msu" short-display-name="msu">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.cpu.msu.avg"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.cpu.msu.avg" sampling="0"
+                        short-display-name="MSU average" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.cpu.msu.capacity"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.cpu.msu.capacity"
+                        sampling="0" short-display-name="MSU capacity" unit=""/>
+                </monitor-category>
+                <monitor-category name="ziip" short-display-name="ziip">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.cpu.ziip.eligible"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.cpu.ziip.eligible"
+                        sampling="0" short-display-name="zIIP eligible" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.cpu.ziip.usage"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.cpu.ziip.usage" sampling="0"
+                        short-display-name="zIIP usage" unit=""/>
+                </monitor-category>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.entConfig"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.entConfig" sampling="0"
+                    short-display-name="AIX Entitlement configured" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.entc" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.entc" sampling="0"
+                    short-display-name="AIX Entitlement used" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.idle" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.idle" sampling="0"
+                    short-display-name="CPU idle" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.iowait" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.iowait" sampling="0"
+                    short-display-name="CPU I/O wait" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.load" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.load" sampling="0"
+                    short-display-name="System load" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.load15m" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.load15m" sampling="0"
+                    short-display-name="System load15m" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.load5m" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.load5m" sampling="0"
+                    short-display-name="System load5m" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.other" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.other" sampling="0"
+                    short-display-name="CPU other" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.physc" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.physc" sampling="0"
+                    short-display-name="AIX Physical consumed" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.steal" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.steal" sampling="0"
+                    short-display-name="CPU steal" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.system" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.system" sampling="0"
+                    short-display-name="CPU system" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.usage" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.usage" sampling="0"
+                    short-display-name="CPU usage %" unit="%">
+                    <description>Percentage of CPU time currently utilized.</description>
+                </monitor-dynatrace>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.cpu.user" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.cpu.user" sampling="0"
+                    short-display-name="CPU user" unit="%"/>
+            </monitor-category>
+            <monitor-category name="disk" short-display-name="disk">
+                <monitor-category name="throughput" short-display-name="throughput">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.disk.throughput.read"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.disk.throughput.read"
+                        sampling="0"
+                        short-display-name="Disk throughput read" unit="">
+                        <description>Disk reading throughput.</description>
+                    </monitor-dynatrace>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.disk.throughput.write"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.disk.throughput.write"
+                        sampling="0"
+                        short-display-name="Disk throughput write" unit="">
+                        <description>Disk writing throughput.</description>
+                    </monitor-dynatrace>
+                </monitor-category>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.avail" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.avail" sampling="0"
+                    short-display-name="Disk available" unit="B"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.bytesRead"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.bytesRead" sampling="0"
+                    short-display-name="Disk read bytes per second" unit="B/s"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.bytesWritten"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.bytesWritten" sampling="0"
+                    short-display-name="Disk write bytes per second" unit="B/s"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.free" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.free" sampling="0"
+                    short-display-name="Disk available %" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.inodesAvail"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.inodesAvail" sampling="0"
+                    short-display-name="Inodes available %" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.inodesTotal"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.inodesTotal" sampling="0"
+                    short-display-name="Inodes total" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.queueLength"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.queueLength" sampling="0"
+                    short-display-name="Disk average queue length " unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.readOps"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.readOps" sampling="0"
+                    short-display-name="Disk read operations per second" unit="/s"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.readTime"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.readTime" sampling="0"
+                    short-display-name="Disk read time " unit="ms"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.used" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.used" sampling="0"
+                    short-display-name="Disk used" unit="B"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.usedPct"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.usedPct" sampling="0"
+                    short-display-name="Disk used %" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.utilTime"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.utilTime" sampling="0"
+                    short-display-name="Disk utilization time " unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.writeOps"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.writeOps" sampling="0"
+                    short-display-name="Disk write operations per second" unit="/s"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.disk.writeTime"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.disk.writeTime" sampling="0"
+                    short-display-name="Disk write time " unit="ms"/>
+            </monitor-category>
+            <monitor-category name="handles" short-display-name="handles">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.handles.fileDescriptorsMax"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.handles.fileDescriptorsMax"
+                    sampling="0"
+                    short-display-name="File descriptors max" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.handles.fileDescriptorsUsed"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.handles.fileDescriptorsUsed"
+                    sampling="0"
+                    short-display-name="File descriptors used" unit=""/>
+            </monitor-category>
+            <monitor-category name="kernelThreads" short-display-name="kernelThreads">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.kernelThreads.blocked"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.kernelThreads.blocked"
+                    sampling="0"
+                    short-display-name="AIX Kernel threads blocked" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.kernelThreads.ioEventWait"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.kernelThreads.ioEventWait"
+                    sampling="0"
+                    short-display-name="AIX Kernel threads I/O event wait" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.kernelThreads.ioMessageWait"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.kernelThreads.ioMessageWait"
+                    sampling="0"
+                    short-display-name="AIX Kernel threads I/O message wait" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.kernelThreads.running"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.kernelThreads.running"
+                    sampling="0"
+                    short-display-name="AIX Kernel threads running" unit=""/>
+            </monitor-category>
+            <monitor-category name="mem" short-display-name="mem">
+                <monitor-category name="avail" short-display-name="avail">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.mem.avail.bytes"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.mem.avail.bytes" sampling="0"
+                        short-display-name="Memory available" unit="B"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.mem.avail.pct"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.mem.avail.pct" sampling="0"
+                        short-display-name="Memory available %" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.mem.avail.pfps"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.mem.avail.pfps" sampling="0"
+                        short-display-name="Page faults per second" unit="/s"/>
+                </monitor-category>
+                <monitor-category name="swap" short-display-name="swap">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.mem.swap.avail"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.mem.swap.avail" sampling="0"
+                        short-display-name="Swap available" unit="B"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.mem.swap.used"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.mem.swap.used" sampling="0"
+                        short-display-name="Swap used" unit="B"/>
+                </monitor-category>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.mem.kernel" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.mem.kernel" sampling="0"
+                    short-display-name="Kernel memory" unit="B"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.mem.recl" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.mem.recl" sampling="0"
+                    short-display-name="Memory reclaimable" unit="B"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.mem.usage" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.mem.usage" sampling="0"
+                    short-display-name="Memory used %" unit="%">
+                    <description>Percentage of memory currently used. Note: Calculated by taking 100% - "Memory available %".</description>
+                </monitor-dynatrace>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.mem.used" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.mem.used" sampling="0"
+                    short-display-name="Memory used" unit="B"/>
+            </monitor-category>
+            <monitor-category name="net" short-display-name="net">
+                <monitor-category name="nic" short-display-name="nic">
+                    <monitor-category name="packets" short-display-name="packets">
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.nic.packets.droppedRx"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.nic.packets.droppedRx"
+                            sampling="0"
+                            short-display-name="Network interface received packets dropped on host" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.nic.packets.droppedTx"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.nic.packets.droppedTx"
+                            sampling="0"
+                            short-display-name="Network interface sent packets dropped on host" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.nic.packets.errorsRx"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.nic.packets.errorsRx"
+                            sampling="0"
+                            short-display-name="Network interface received packet errors on host" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.nic.packets.errorsTx"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.nic.packets.errorsTx"
+                            sampling="0"
+                            short-display-name="Network interface sent packet errors on host" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.nic.packets.rx"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.nic.packets.rx"
+                            sampling="0"
+                            short-display-name="Network interface packets received on host" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.nic.packets.tx"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.nic.packets.tx"
+                            sampling="0"
+                            short-display-name="Network interface packets sent on host" unit="/s"/>
+                    </monitor-category>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.nic.bytesRx"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.nic.bytesRx" sampling="0"
+                        short-display-name="Network interface bytes received on host" unit="B/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.nic.bytesTx"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.nic.bytesTx" sampling="0"
+                        short-display-name="Network interface bytes sent on host" unit="B/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.nic.linkUtilRx"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.nic.linkUtilRx"
+                        sampling="0"
+                        short-display-name="Network interface receive link utilization on host" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.nic.linkUtilTx"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.nic.linkUtilTx"
+                        sampling="0"
+                        short-display-name="Network interface transmit link utilization on host" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.nic.trafficIn"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.nic.trafficIn"
+                        sampling="0" short-display-name="Traffic in" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.nic.trafficOut"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.nic.trafficOut"
+                        sampling="0" short-display-name="Traffic out" unit=""/>
+                </monitor-category>
+                <monitor-category name="packets" short-display-name="packets">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.packets.rxBaseReceived"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.packets.rxBaseReceived"
+                        sampling="0"
+                        short-display-name="Host aggregated process retransmission base received per second" unit="/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.packets.rxBaseSent"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.packets.rxBaseSent"
+                        sampling="0"
+                        short-display-name="Host aggregated process retransmission base sent per second" unit="/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.packets.rxReceived"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.packets.rxReceived"
+                        sampling="0"
+                        short-display-name="Host aggregated process retransmitted packets received per second" unit="/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.packets.rxSent"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.packets.rxSent"
+                        sampling="0"
+                        short-display-name="Host aggregated process retransmitted packets sent per second" unit="/s"/>
+                </monitor-category>
+                <monitor-category name="sessions" short-display-name="sessions">
+                    <monitor-category name="local" short-display-name="local">
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.sessions.local.errRst"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.sessions.local.errRst"
+                            sampling="0"
+                            short-display-name="Host aggregated session reset received per second on localhost" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.sessions.local.errTmout"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.sessions.local.errTmout"
+                            sampling="0"
+                            short-display-name="Host aggregated session timeout received per second on localhost" unit="/s"/>
+                        <monitor-dynatrace callTime="ON_BENCH"
+                            computing="0"
+                            dynatrace-id="builtin:host.net.sessions.local.new"
+                            entity-id="" entity-types="HOST"
+                            format="NUMBER"
+                            name="builtin:host.net.sessions.local.new"
+                            sampling="0"
+                            short-display-name="Host aggregated new session received per second on localhost" unit="/s"/>
+                    </monitor-category>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.sessions.errRst"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.sessions.errRst"
+                        sampling="0"
+                        short-display-name="Host aggregated process session reset received per second" unit="/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.sessions.errTmout"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.sessions.errTmout"
+                        sampling="0"
+                        short-display-name="Host aggregated process session timeout received per second" unit="/s"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.net.sessions.new"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.net.sessions.new"
+                        sampling="0"
+                        short-display-name="Host aggregated process new session received per second" unit="/s"/>
+                </monitor-category>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.net.bytesRx" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.net.bytesRx" sampling="0"
+                    short-display-name="Host aggregated process bytes received per second" unit="B/s"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.net.bytesTx" entity-id=""
+                    entity-types="HOST" format="NUMBER"
+                    name="builtin:host.net.bytesTx" sampling="0"
+                    short-display-name="Host aggregated process bytes sent per second" unit="B/s"/>
+            </monitor-category>
+            <monitor-category name="osService" short-display-name="osService">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.osService.availability"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.osService.availability"
+                    sampling="0"
+                    short-display-name="OS Service availability" unit=""/>
+            </monitor-category>
+            <monitor-category name="dns" short-display-name="dns">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.dns.errorCount"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.dns.errorCount" sampling="0"
+                    short-display-name="Number of DNS errors by type" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.dns.orphanCount"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.dns.orphanCount" sampling="0"
+                    short-display-name="Number of orphaned DNS responses" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.dns.queryCount"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.dns.queryCount" sampling="0"
+                    short-display-name="Number of DNS queries" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:host.dns.queryTime"
+                    entity-id="" entity-types="HOST" format="NUMBER"
+                    name="builtin:host.dns.queryTime" sampling="0"
+                    short-display-name="DNS query time" unit="ms"/>
+            </monitor-category>
+            <monitor-category name="remotePluginAgent" short-display-name="remotePluginAgent">
+                <monitor-category name="selfMonitoring" short-display-name="selfMonitoring">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:host.remotePluginAgent.selfMonitoring.executionTime"
+                        entity-id="" entity-types="HOST" format="NUMBER"
+                        name="builtin:host.remotePluginAgent.selfMonitoring.executionTime"
+                        sampling="0" short-display-name="Execution time" unit="ms"/>
+                </monitor-category>
+            </monitor-category>
+        </monitor-category>
+        <monitor-category name="service" short-display-name="service">
+            <monitor-category name="cpu" short-display-name="cpu">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.cpu.perRequest"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.cpu.perRequest" sampling="0"
+                    short-display-name="CPU time" unit="µs"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.cpu.time" entity-id=""
+                    entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.cpu.time" sampling="0"
+                    short-display-name="Service CPU time" unit="µs"/>
+            </monitor-category>
+            <monitor-category name="errors" short-display-name="errors">
+                <monitor-category name="client" short-display-name="client">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.client.count"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.client.count"
+                        sampling="0"
+                        short-display-name="Number of client side errors" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.client.rate"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.client.rate"
+                        sampling="0"
+                        short-display-name="Failure rate (client side  errors)" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.client.successCount"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.client.successCount"
+                        sampling="0"
+                        short-display-name="Number of calls without  client side errors" unit=""/>
+                </monitor-category>
+                <monitor-category name="fivexx" short-display-name="fivexx">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.fivexx.count"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.fivexx.count"
+                        sampling="0"
+                        short-display-name="Number of HTTP 5xx errors" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.fivexx.rate"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.fivexx.rate"
+                        sampling="0"
+                        short-display-name="Failure rate (HTTP 5xx  errors)" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.fivexx.successCount"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.fivexx.successCount"
+                        sampling="0"
+                        short-display-name="Number of calls without  HTTP 5xx errors" unit=""/>
+                </monitor-category>
+                <monitor-category name="fourxx" short-display-name="fourxx">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.fourxx.count"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.fourxx.count"
+                        sampling="0"
+                        short-display-name="Number of HTTP 4xx errors" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.fourxx.rate"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.fourxx.rate"
+                        sampling="0"
+                        short-display-name="Failure rate (HTTP 4xx  errors)" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.fourxx.successCount"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.fourxx.successCount"
+                        sampling="0"
+                        short-display-name="Number of calls without  HTTP 4xx errors" unit=""/>
+                </monitor-category>
+                <monitor-category name="server" short-display-name="server">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.server.count"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.server.count"
+                        sampling="0"
+                        short-display-name="Number of server side errors" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.server.rate"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.server.rate"
+                        sampling="0"
+                        short-display-name="Failure rate (server side  errors)" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.server.successCount"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.server.successCount"
+                        sampling="0"
+                        short-display-name="Number of calls without  server side errors" unit=""/>
+                </monitor-category>
+                <monitor-category name="total" short-display-name="total">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.total.count"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.total.count"
+                        sampling="0"
+                        short-display-name="Number of any errors" unit=""/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.total.rate"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.total.rate"
+                        sampling="0"
+                        short-display-name="Failure rate (any  errors)" unit="%"/>
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.errors.total.successCount"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.errors.total.successCount"
+                        sampling="0"
+                        short-display-name="Number of calls without  any errors" unit=""/>
+                </monitor-category>
+            </monitor-category>
+            <monitor-category name="response" short-display-name="response">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.response.client"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.response.client" sampling="0"
+                    short-display-name="Client side response time" unit="µs"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.response.server"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.response.server" sampling="0"
+                    short-display-name="Server side response time" unit="µs"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.response.time"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.response.time" sampling="0"
+                    short-display-name="Response time" unit="µs"/>
+            </monitor-category>
+            <monitor-category name="dbconnections" short-display-name="dbconnections">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.dbconnections.failure"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.dbconnections.failure"
+                    sampling="0" short-display-name="Failed connections" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.dbconnections.failureRate"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.dbconnections.failureRate"
+                    sampling="0"
+                    short-display-name="Connection failure rate" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.dbconnections.success"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.dbconnections.success"
+                    sampling="0"
+                    short-display-name="Successful connections" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.dbconnections.successRate"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.dbconnections.successRate"
+                    sampling="0"
+                    short-display-name="Connection success rate" unit="%"/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.dbconnections.total"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.dbconnections.total"
+                    sampling="0"
+                    short-display-name="Total number of connections" unit=""/>
+            </monitor-category>
+            <monitor-category name="requestCount" short-display-name="requestCount">
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.requestCount.client"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.requestCount.client"
+                    sampling="0"
+                    short-display-name="Request count - client" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.requestCount.server"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.requestCount.server"
+                    sampling="0"
+                    short-display-name="Request count - server" unit=""/>
+                <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                    dynatrace-id="builtin:service.requestCount.total"
+                    entity-id="" entity-types="SERVICE" format="NUMBER"
+                    name="builtin:service.requestCount.total"
+                    sampling="0" short-display-name="Request count" unit=""/>
+            </monitor-category>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.totalProcessingTime"
+                entity-id="" entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.totalProcessingTime" sampling="0"
+                short-display-name="Total processing time" unit="µs"/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.dbChildCallCount"
+                entity-id="" entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.dbChildCallCount" sampling="0"
+                short-display-name="Number of calls to databases" unit=""/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.dbChildCallTime"
+                entity-id="" entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.dbChildCallTime" sampling="0"
+                short-display-name="Time spent in database calls" unit="µs"/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.ioTime" entity-id=""
+                entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.ioTime" sampling="0"
+                short-display-name="IO time" unit="µs"/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.lockTime" entity-id=""
+                entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.lockTime" sampling="0"
+                short-display-name="Lock time" unit="µs"/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.nonDbChildCallCount"
+                entity-id="" entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.nonDbChildCallCount" sampling="0"
+                short-display-name="Number of calls to other services" unit=""/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.nonDbChildCallTime"
+                entity-id="" entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.nonDbChildCallTime" sampling="0"
+                short-display-name="Time spent in calls to other services" unit="µs"/>
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="builtin:service.waitTime" entity-id=""
+                entity-types="SERVICE" format="NUMBER"
+                name="builtin:service.waitTime" sampling="0"
+                short-display-name="Wait time" unit="µs"/>
+            <monitor-category name="successes" short-display-name="successes">
+                <monitor-category name="server" short-display-name="server">
+                    <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                        dynatrace-id="builtin:service.successes.server.rate"
+                        entity-id="" entity-types="SERVICE"
+                        format="NUMBER"
+                        name="builtin:service.successes.server.rate"
+                        sampling="0"
+                        short-display-name="Success rate (server side)" unit="%"/>
+                </monitor-category>
+            </monitor-category>
+        </monitor-category>
+    </monitor-category>
+    <monitor-category name="calc" short-display-name="calc">
+        <monitor-category name="service" short-display-name="service">
+            <monitor-dynatrace callTime="ON_BENCH" computing="0"
+                dynatrace-id="calc:service.testtransactioncputime"
+                entity-id="" entity-types="SERVICE" format="NUMBER"
+                name="calc:service.testtransactioncputime" sampling="0"
+                short-display-name="Test Transaction CPU Time" unit="µs"/>
+        </monitor-category>
+    </monitor-category>
+</connection-dynatrace>
