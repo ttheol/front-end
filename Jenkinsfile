@@ -151,7 +151,7 @@ pipeline {
                                export PATH=~/.local/bin:$PATH
                                neoload \
                                login --workspace "Default Workspace" $NLAPIKEY \
-                               test-settings  --zone defaultzone --scenario FrontEndLoad use FrontDynatrace \
+                               test-settings  --zone defaultzone --scenario FrontEndLoad patch FrontDynatrace \
                                project --path $WORKSPACE/test/neoload/load_template/ upload
                           """
 
