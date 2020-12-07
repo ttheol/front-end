@@ -50,9 +50,6 @@
     <lg-networkiface description="HMA TAP-Windows Adapter V9"
         enabled="false" isLoopBack="false" name="eth0">
         <!--****** LG ADDRESSES ******-->
-        <lg-address enabled="false" hostname="pc014.intranet.neotys.com">
-            <ip value="100.120.9.120"/>
-        </lg-address>
         <lg-address enabled="false" hostname="fe80:0:0:0:497c:9f20:ae2e:ecc4%eth0">
             <ip value="fe80:0:0:0:497c:9f20:ae2e:ecc4%eth0"/>
         </lg-address>
