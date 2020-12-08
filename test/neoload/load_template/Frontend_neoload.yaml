@@ -17,7 +17,6 @@ variables:
 - constant:
     name: port
     value: PORT_TO_REPLACE
-
 scenarios:
 - name: FrontEndLoad
   populations:
