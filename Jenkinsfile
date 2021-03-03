@@ -141,11 +141,11 @@ pipeline {
                 steps {
                      withEnv(["HOME=${env.WORKSPACE}"]) {
 
-                         sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
-                         sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
-                         sh "sed -i 's,DTID_TO_REPLACE,${DYNATRACEID},' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
-                         sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
-                         sh "sed -i 's/TAGS_TO_APP/${NL_DT_TAG_APP}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
+                         sh "sed -i 's/HOST_TO_REPLACE/${HOST}/'  $WORKSPACE/test/neoload/load_template/default.yaml"
+                         sh "sed -i 's/PORT_TO_REPLACE/80/' $WORKSPACE/test/neoload/load_template/default.yaml"
+                         sh "sed -i 's,DTID_TO_REPLACE,${DYNATRACEID},' $WORKSPACE/test/neoload/load_template/default.yaml"
+                         sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/load_template/default.yaml"
+                         sh "sed -i 's/TAGS_TO_APP/${NL_DT_TAG_APP}/' $WORKSPACE/test/neoload/load_template/default.yaml"
 
 
                          sh """
