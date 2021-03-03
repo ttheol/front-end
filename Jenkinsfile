@@ -146,7 +146,6 @@ pipeline {
                          sh "sed -i 's,DTID_TO_REPLACE,${DYNATRACEID},' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
                          sh "sed -i 's/APIKEY_TO_REPLACE/${DYNATRACEAPIKEY}/'  $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
                          sh "sed -i 's/TAGS_TO_APP/${NL_DT_TAG_APP}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
-                         sh "sed -i 's/TAGS_ENV/${NL_DT_TAG_ENV}/' $WORKSPACE/test/neoload/load_template/Frontend_neoload.yaml"
 
 
                          sh """
@@ -172,8 +171,8 @@ pipeline {
                   sh """
                        export PATH=~/.local/bin:$PATH
                        neoload run \
-                      --return-0 \
-                        --as-code Frontend_neoload.yaml \
+                        --return-0 \
+                        --as-code default.yaml \
                         FrontDynatrace
                      """
                 }

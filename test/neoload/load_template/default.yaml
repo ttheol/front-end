@@ -27,8 +27,7 @@ scenarios:
       rampup: 30s
   apm_configuration:
     dynatrace_tags:
-    - TAGS_TO_APP
-    - TAGS_ENV
+    - "TAGS_TO_APP"
     dynatrace_anomaly_rules:
     - metric_id: builtin:service.responsetime
       operator: ABOVE
